@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: '*/15 * * * *'
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force update'
+        type: boolean
+        required: true
+        default: false
 
 jobs:
   check:
@@ -20,7 +26,7 @@ jobs:
 
   update:
     needs: check
-    if: ${{ needs.check.outputs.id != '' }}
+    if: ${{ inputs.force || needs.check.outputs.id != '' }}
     runs-on: ubuntu-latest
     steps:
       - uses: peter-evans/repository-dispatch@v2
