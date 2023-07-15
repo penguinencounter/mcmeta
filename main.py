@@ -211,6 +211,7 @@ def process(version: str, versions: dict[str], exports: tuple[str]):
 	shutil.rmtree('data/data', ignore_errors=True)
 	shutil.rmtree('data-json/data', ignore_errors=True)
 	extracted = 0
+	milestone = 100
 	with zipfile.ZipFile('client.jar', 'r') as jar:
 		for file in jar.namelist():
 			if file.endswith('.mcassetsroot'):
@@ -225,6 +226,10 @@ def process(version: str, versions: dict[str], exports: tuple[str]):
 					if f'{part}-json' in exports and file.endswith('.json'):
 						extracted += 1
 						jar.extract(file, f'{part}-json')
+			if extracted > milestone:
+				milestone = extracted + 100
+				print(f"\rextracting: done {extracted} files...".ljust(50), end="", flush=True)
+	print("\r".ljust(50) + "\r", end="", flush=True)
 	click.echo('       extracted ' + str(extracted) + ' files')
 
 
@@ -461,6 +466,9 @@ def process(version: str, versions: dict[str], exports: tuple[str]):
 			create_summary(entries, f'registries/{key}', bin=False)
 		create_summary(sorted(registries.keys()), 'registries', clear=False, bin=False)
 
+	click.echo('converting PNGs')
+	convert_images()
+
 	click.echo('finishing up')
 
 	# === copy pack.mcmeta to json exports ===
@@ -566,6 +574,48 @@ def cache(key: str, factory):
 		with open(cache_path, 'wb') as f:
 			f.write(content)
 		return content
+
+
+def convert_images():
+	ASSETDIR = "assets"
+	converted = 0
+	milestone = 0
+	total = 0
+	last = "?"
+	click.echo("counting assets")
+	for cwd, _, files in os.walk(ASSETDIR):
+		targets = list(filter(lambda x: x.endswith(".png"), files))
+		total += len(targets)
+
+	print(f"counted {total} assets")
+	for cwd, _, files in os.walk(ASSETDIR):
+		targets = list(filter(lambda x: x.endswith(".png"), files))
+		targets = list(map(lambda x: os.path.join(cwd, x), targets))
+		for target in targets:
+			i = Image.open(target)
+			i = i.convert("RGBA")
+			content = ""
+			for y in range(i.height):
+				for x in range(i.width):
+					pix = i.getpixel((x, y))
+					content += f"{pix[0]:02x}{pix[1]:02x}{pix[2]:02x}{pix[3]:02x} "
+				content += "\n"
+			with open(target + ".raw", "w") as file:
+				file.write(content)
+			last = os.path.split(target)[1]
+			converted += 1
+
+			if converted >= milestone:
+				milestone = converted + 10
+				print(f"\r{converted}/{total} {last}".ljust(75), end='', flush=True)
+	print(f"\r{converted} converted".ljust(75))
+	print("discarding originals")
+	for cwd, _, files in os.walk(ASSETDIR):
+		targets = list(filter(lambda x: x.endswith(".png"), files))
+		targets = list(map(lambda x: os.path.join(cwd, x), targets))
+		for target in targets:
+			os.remove(target)
+	print("completed conversion")
 
 
 if __name__ == '__main__':
