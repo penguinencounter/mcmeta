@@ -224,7 +224,7 @@ def process(version: str, versions: dict[str], exports: tuple[str]):
 					if f'{part}-json' in exports and file.endswith('.json'):
 						extracted += 1
 						jar.extract(file, f'{part}-json')
-	click.echo('       extracted ' + extracted + ' files')
+	click.echo('       extracted ' + str(extracted) + ' files')
 
 	# === update version metas ===
 	click.echo('   🏷️  Updating versions')
