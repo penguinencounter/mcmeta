@@ -1,6 +1,6 @@
 # MIT License
 # 
-# Copyright (c) 2022 Misode
+# Copyright (c) 2023 Misode, PenguinEncounter
 # 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -37,6 +37,7 @@ import datetime
 import re
 import time
 import image_packer.packer
+from PIL import Image
 
 EXPORTS = ('assets',)
 
@@ -417,7 +418,6 @@ def process(version: str, versions: dict[str], exports: tuple[str]):
 		create_summary(dict(sorted(blocks.items())), 'summary/blocks')
 		create_summary(dict(sorted(sounds.items())), 'summary/sounds')
 		create_summary(commands, 'summary/commands')
-		create_summary(version_metas, 'summary/versions')
 
 		for key in contents:
 			part = 'assets' if key in ['block_definition', 'font', 'model'] else 'data'
