@@ -462,11 +462,6 @@ def process(version: str, versions: dict[str], exports: tuple[str]):
 		create_summary(sorted(registries.keys()), 'registries', clear=False, bin=False)
 
 	click.echo('finishing up')
-	# === export version.json to all ===
-	for export in exports:
-		with open(f'{export}/version.json', 'w') as f:
-			json.dump(version_meta, f, indent=2)
-			f.write('\n')
 
 	# === copy pack.mcmeta to json exports ===
 	for export in ['assets', 'data']:
