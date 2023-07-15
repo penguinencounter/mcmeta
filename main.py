@@ -209,18 +209,22 @@ def process(version: str, versions: dict[str], exports: tuple[str]):
 	shutil.rmtree('assets-json/assets', ignore_errors=True)
 	shutil.rmtree('data/data', ignore_errors=True)
 	shutil.rmtree('data-json/data', ignore_errors=True)
+	extracted = 0
 	with zipfile.ZipFile('client.jar', 'r') as jar:
 		for file in jar.namelist():
 			if file.endswith('.mcassetsroot'):
 				continue
 			if file.endswith('pack.mcmeta'):
+				extracted += 1
 				jar.extract(file, 'data')
 			for part in ['assets', 'data']:
 				if file.startswith(f'{part}/'):
-					print("extracting " + file)
+					extracted += 1
 					jar.extract(file, part)
 					if f'{part}-json' in exports and file.endswith('.json'):
+						extracted += 1
 						jar.extract(file, f'{part}-json')
+	click.echo('       extracted ' + extracted + ' files')
 
 	# === update version metas ===
 	click.echo('   🏷️  Updating versions')
@@ -320,6 +324,7 @@ def process(version: str, versions: dict[str], exports: tuple[str]):
 					json.dump(dimension, f, indent=2)
 
 	# === stabilize ordering in some data files ===
+	click.echo('       reordering some files')
 	reorders = [
 		('advancements/adventure/adventuring_time',
 			[('criteria', None), ('requirements', lambda e: e[0])]),
@@ -552,6 +557,7 @@ def process(version: str, versions: dict[str], exports: tuple[str]):
 			create_summary(entries, f'registries/{key}', bin=False)
 		create_summary(sorted(registries.keys()), 'registries', clear=False, bin=False)
 
+	click.echo('finishing up')
 	# === export version.json to all ===
 	for export in exports:
 		with open(f'{export}/version.json', 'w') as f:
