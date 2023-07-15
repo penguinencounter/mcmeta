@@ -217,6 +217,7 @@ def process(version: str, versions: dict[str], exports: tuple[str]):
 				jar.extract(file, 'data')
 			for part in ['assets', 'data']:
 				if file.startswith(f'{part}/'):
+					print("extracting " + file)
 					jar.extract(file, part)
 					if f'{part}-json' in exports and file.endswith('.json'):
 						jar.extract(file, f'{part}-json')
