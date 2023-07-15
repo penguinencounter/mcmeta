@@ -52,6 +52,6 @@ jobs:
 
       - run: python main.py${{ inputs.force && format(' --undo {0}', inputs.undo) || '' }} --version ${{ inputs.version }} --fetch --export ${{ inputs.export }}${{ inputs.commit && ' --commit --push' || '' }}${{ inputs.force && ' --force' || '' }}
         env:
-          github-username: misode
+          github-username: penguinencounter
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          github-repository: misode/mcmeta
+          github-repository: penguinencounter/mcmeta
