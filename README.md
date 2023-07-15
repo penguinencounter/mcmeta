@@ -1,3 +1,5 @@
+This is a fork of misode/mcmeta. Unfortunately, due to GHA restrictions, I had to manually fork it.
+
 # mcmeta
 > Processed, version controlled history of Minecraft's generated data and assets
 
