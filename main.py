@@ -39,7 +39,7 @@ import time
 import image_packer.packer
 from PIL import Image
 
-EXPORTS = ('assets',)
+EXPORTS = ('assets', 'data')
 
 APRIL_FOOLS = ('15w14a', '3D Shareware v1.34', '20w14infinite', '22w13oneblockatatime', '23w13a_or_b')
 
