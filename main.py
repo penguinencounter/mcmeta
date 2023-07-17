@@ -232,6 +232,102 @@ def process(version: str, versions: dict[str], exports: tuple[str]):
 	print("\r".ljust(50) + "\r", end="", flush=True)
 	click.echo('       extracted ' + str(extracted) + ' files')
 
+	# === update version metas ===
+	click.echo('   🏷️  Updating versions')
+	try:
+		with open('versions.json', 'r') as f:
+			version_metas = json.load(f)
+	except:
+		version_metas = []
+
+	if version not in [v['id'] for v in version_metas]:
+		version_metas.append(get_version_meta(version, versions, 'client.jar'))
+	has_version_ids = [v['id'] for v in version_metas]
+	for v in expand_version_range(f'1.14..{version}', versions):
+		if v not in has_version_ids:
+			version_metas.append(get_version_meta(v, versions))
+	version_metas.sort(key=lambda v: versions[v['id']]['index'])
+	version_meta = next(v for v in version_metas if v['id'] == version)
+
+	with open('versions.json', 'w') as f:
+		json.dump(version_metas, f)
+
+	# === reconstruct data pack.mcmeta ===
+	if versions[version]['index'] <= versions['20w45a']['index']:
+		pack = {
+			'pack': {
+				'description': 'The default data for Minecraft',
+				'pack_format': version_meta['data_pack_version']
+			}
+		}
+		for e in ['data', 'data-json']:
+			os.makedirs(e, exist_ok=True)
+			with open(f'{e}/pack.mcmeta', 'w') as f:
+				json.dump(pack, f, indent=4)
+
+	# === run data generators ===
+	if (versions[version]['index'] > versions['22w42a']['index'] and ('data' in exports or 'data-json' in exports)) or 'summary' in exports or 'registries' in exports:
+		click.echo('   ⚙️  Running data generator')
+		shutil.rmtree('generated', ignore_errors=True)
+		if versions[version]['index'] <= versions['21w39a']['index']:
+			subprocess.run(['java', '-DbundlerMainClass=net.minecraft.data.Main', '-jar', 'server.jar', '--reports'], capture_output=True)
+		else:
+			subprocess.run(['java', '-cp', 'server.jar', 'net.minecraft.data.Main', '--reports'], capture_output=True)
+
+	# === get vanilla worldgen ===
+	if 'data' in exports or 'data-json' in exports or 'summary' in exports or 'registries' in exports:
+		if versions[version]['index'] <= versions['22w42a']['index']:
+			pass
+		elif versions[version]['index'] <= versions['22w19a']['index']:
+			shutil.copytree('generated/reports/minecraft', 'data/data/minecraft', dirs_exist_ok=True)
+			shutil.copytree('generated/reports/minecraft', 'data-json/data/minecraft', dirs_exist_ok=True)
+		elif versions[version]['index'] <= versions['1.18-pre1']['index']:
+			shutil.copytree('generated/reports/worldgen', 'data/data', dirs_exist_ok=True)
+			shutil.copytree('generated/reports/worldgen', 'data-json/data', dirs_exist_ok=True)
+		elif versions[version]['index'] <= versions['20w28a']['index']:
+			click.echo('   ⬇️  Downloading vanilla worldgen')
+			username = os.getenv('github-username')
+			token = os.getenv('github-token')
+			auth = requests.auth.HTTPBasicAuth(username, token) if username and token else None
+			headers = { 'Accept': 'application/vnd.github.v3+json' }
+			released = datetime.datetime.fromisoformat(versions[version]['releaseTime'])
+			released += datetime.timedelta(days=1)
+			res = requests.get(f'https://api.github.com/repos/slicedlime/examples/commits?until={released.isoformat()}', headers=headers, auth=auth)
+			click.echo(f'      Remaining GitHub requests: {res.headers["X-RateLimit-Remaining"]}/{res.headers["X-RateLimit-Limit"]}')
+			commits = res.json()
+			if 'message' in commits:
+				raise ValueError(f'Cannot get vanilla worldgen: {commits["message"]}')
+			for id in version_ids[versions[version]['index']:]:
+				sha = next((c['sha'] for c in commits if re.match(f'Update to {id}\\.?$', c['commit']['message'])), None)
+				if sha is None and id == '20w28a':
+					sha = 'd304a1dcf330005e617a78cef4e492ab3e2c09b0'
+				if sha:
+					content = fetch(f'slicedlime-{sha}', f'https://raw.githubusercontent.com/slicedlime/examples/{sha}/vanilla_worldgen.zip')
+					with open('vanilla_worldgen.zip', 'wb') as f:
+						f.write(content)
+					zip = zipfile.ZipFile('vanilla_worldgen.zip', 'r')
+					zip.extractall('data/data/minecraft')
+					zip.extractall('data-json/data/minecraft')
+					break
+
+	# === reconstruct dimensions ===
+	if versions[version]['index'] <= versions['22w11a']['index'] and not os.path.isdir('data/data/minecraft/dimension'):
+		with open('data/data/minecraft/worldgen/world_preset/normal.json', 'r') as f:
+			world_preset = json.load(f)
+		for key, dimension in world_preset['dimensions'].items():
+			preset = dimension['generator'].get('biome_source', dict()).get('preset', '')
+			try:
+				with open(f'generated/reports/biome_parameters/{preset.replace(":", "/")}.json', 'r') as f:
+					parameters = json.load(f)
+					if parameters:
+						parameters['type'] = 'minecraft:multi_noise'
+						dimension['generator']['biome_source'] = parameters
+			except:
+				pass
+			for e in ['data', 'data-json']:
+				os.makedirs(f'{e}/data/minecraft/dimension/', exist_ok=True)
+				with open(f'{e}/data/minecraft/dimension/{key.removeprefix("minecraft:")}.json', 'w') as f:
+					json.dump(dimension, f, indent=2)
 
 	# === stabilize ordering in some data files ===
 	click.echo('       reordering some files')
