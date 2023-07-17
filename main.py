@@ -153,6 +153,7 @@ def expand_version_range(version: str | None, versions: dict[str]):
 
 
 def get_version_meta(version: str, versions: dict[str], jar: str = None):
+	print(f'📥 Fetching version meta for {version}...')
 	def create_version_meta():
 		os.makedirs('tmp', exist_ok=True)
 
@@ -242,10 +243,10 @@ def process(version: str, versions: dict[str], exports: tuple[str]):
 
 	if version not in [v['id'] for v in version_metas]:
 		version_metas.append(get_version_meta(version, versions, 'client.jar'))
-	has_version_ids = [v['id'] for v in version_metas]
-	for v in expand_version_range(f'1.14..{version}', versions):
-		if v not in has_version_ids:
-			version_metas.append(get_version_meta(v, versions))
+	# has_version_ids = [v['id'] for v in version_metas]
+	# for v in expand_version_range(f'1.14..{version}', versions):
+	# 	if v not in has_version_ids:
+	# 		version_metas.append(get_version_meta(v, versions))
 	version_metas.sort(key=lambda v: versions[v['id']]['index'])
 	version_meta = next(v for v in version_metas if v['id'] == version)
 
