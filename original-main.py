@@ -1,6 +1,6 @@
 # MIT License
 # 
-# Copyright (c) 2023 Misode, PenguinEncounter
+# Copyright (c) 2022 Misode
 # 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -37,9 +37,8 @@ import datetime
 import re
 import time
 import image_packer.packer
-from PIL import Image
 
-EXPORTS = ('assets', 'data', 'data-json', 'summary', 'registries')
+EXPORTS = ('assets', 'assets-json', 'data', 'data-json', 'summary', 'registries', 'atlas')
 
 APRIL_FOOLS = ('15w14a', '3D Shareware v1.34', '20w14infinite', '22w13oneblockatatime', '23w13a_or_b')
 
@@ -153,7 +152,6 @@ def expand_version_range(version: str | None, versions: dict[str]):
 
 
 def get_version_meta(version: str, versions: dict[str], jar: str = None):
-	print(f'📥 Fetching version meta for {version}...')
 	def create_version_meta():
 		os.makedirs('tmp', exist_ok=True)
 
@@ -211,27 +209,17 @@ def process(version: str, versions: dict[str], exports: tuple[str]):
 	shutil.rmtree('assets-json/assets', ignore_errors=True)
 	shutil.rmtree('data/data', ignore_errors=True)
 	shutil.rmtree('data-json/data', ignore_errors=True)
-	extracted = 0
-	milestone = 100
 	with zipfile.ZipFile('client.jar', 'r') as jar:
 		for file in jar.namelist():
 			if file.endswith('.mcassetsroot'):
 				continue
 			if file.endswith('pack.mcmeta'):
-				extracted += 1
 				jar.extract(file, 'data')
 			for part in ['assets', 'data']:
 				if file.startswith(f'{part}/'):
-					extracted += 1
 					jar.extract(file, part)
 					if f'{part}-json' in exports and file.endswith('.json'):
-						extracted += 1
 						jar.extract(file, f'{part}-json')
-			if extracted > milestone:
-				milestone = extracted + 100
-				print(f"\rextracting: done {extracted} files...".ljust(50), end="", flush=True)
-	print("\r".ljust(50) + "\r", end="", flush=True)
-	click.echo('       extracted ' + str(extracted) + ' files')
 
 	# === update version metas ===
 	click.echo('   🏷️  Updating versions')
@@ -265,8 +253,7 @@ def process(version: str, versions: dict[str], exports: tuple[str]):
 			os.makedirs(e, exist_ok=True)
 			with open(f'{e}/pack.mcmeta', 'w') as f:
 				json.dump(pack, f, indent=4)
-	print(f"this version is {versions[version]['index']}")
-	print('22w42a is ' + str(versions['22w42a']['index']))
+
 	# === run data generators ===
 	if (versions[version]['index'] > versions['22w42a']['index'] and ('data' in exports or 'data-json' in exports)) or 'summary' in exports or 'registries' in exports:
 		click.echo('   ⚙️  Running data generator')
@@ -332,7 +319,6 @@ def process(version: str, versions: dict[str], exports: tuple[str]):
 					json.dump(dimension, f, indent=2)
 
 	# === stabilize ordering in some data files ===
-	click.echo('       reordering some files')
 	reorders = [
 		('advancements/adventure/adventuring_time',
 			[('criteria', None), ('requirements', lambda e: e[0])]),
@@ -460,35 +446,35 @@ def process(version: str, versions: dict[str], exports: tuple[str]):
 		url = f'https://resources.download.minecraft.net/{hash[0:2]}/{hash}'
 		return fetch(f'resource-{hash}', url)
 
-	# if 'summary' in exports:
-	# 	click.echo('   🔊 Downloading sounds')
-	# 	assets_hash = launchermeta['assetIndex']['sha1']
-	# 	assets_url = launchermeta['assetIndex']['url']
-	# 	assets = json.loads(fetch(f'assets-{assets_hash}', assets_url).decode('utf-8'))
+	if 'summary' in exports:
+		click.echo('   🔊 Downloading sounds')
+		assets_hash = launchermeta['assetIndex']['sha1']
+		assets_url = launchermeta['assetIndex']['url']
+		assets = json.loads(fetch(f'assets-{assets_hash}', assets_url).decode('utf-8'))
 
-	# 	if 'assets' in exports or 'summary' in exports:
-	# 		click.echo(f'      Downloading {len(assets["objects"])} resources')
-	# 		shutil.rmtree('resources', ignore_errors=True)
-	# 		os.makedirs('resources', exist_ok=True)
-	# 		for key, object in assets['objects'].items():
-	# 			sound = get_resource(object['hash'])
-	# 			os.makedirs(os.path.normpath(os.path.join(f'resources/{key}', '..')), exist_ok=True)
-	# 			with open(f'resources/{key}', 'wb') as f:
-	# 				f.write(sound)
+		if 'assets' in exports or 'summary' in exports:
+			click.echo(f'      Downloading {len(assets["objects"])} resources')
+			shutil.rmtree('resources', ignore_errors=True)
+			os.makedirs('resources', exist_ok=True)
+			for key, object in assets['objects'].items():
+				sound = get_resource(object['hash'])
+				os.makedirs(os.path.normpath(os.path.join(f'resources/{key}', '..')), exist_ok=True)
+				with open(f'resources/{key}', 'wb') as f:
+					f.write(sound)
 
-	# 	for export, pattern in [('assets', '*.*'), ('assets-json', '*.json')]:
-	# 		if export in exports:
-	# 			for path in glob.glob(f'resources/**/{pattern}', recursive=True):
-	# 				if path.endswith('hash.txt'):
-	# 					continue
-	# 				target = f'{export}/assets{path.removeprefix("resources")}'
-	# 				if path.endswith('pack.mcmeta'):
-	# 					target = f'{export}/pack.mcmeta'
-	# 				os.makedirs(os.path.normpath(os.path.join(target, '..')), exist_ok=True)
-	# 				shutil.copyfile(path, target)
-	# 	if 'summary' in exports:
-	# 		with open(f'resources/minecraft/sounds.json', 'r') as f:
-	# 			sounds: dict = json.load(f)
+		for export, pattern in [('assets', '*.*'), ('assets-json', '*.json')]:
+			if export in exports:
+				for path in glob.glob(f'resources/**/{pattern}', recursive=True):
+					if path.endswith('hash.txt'):
+						continue
+					target = f'{export}/assets{path.removeprefix("resources")}'
+					if path.endswith('pack.mcmeta'):
+						target = f'{export}/pack.mcmeta'
+					os.makedirs(os.path.normpath(os.path.join(target, '..')), exist_ok=True)
+					shutil.copyfile(path, target)
+		if 'summary' in exports:
+			with open(f'resources/minecraft/sounds.json', 'r') as f:
+				sounds: dict = json.load(f)
 
 	# === read commands report ===
 	if 'summary' in exports:
@@ -499,7 +485,6 @@ def process(version: str, versions: dict[str], exports: tuple[str]):
 
 	# === export summary ===
 	def create_summary(data, path, clear=True, bin=True):
-		print(f'   🖨️  Generating summary for {path}')
 		if clear:
 			shutil.rmtree(path, ignore_errors=True)
 			os.makedirs(path, exist_ok=True)
@@ -520,7 +505,7 @@ def process(version: str, versions: dict[str], exports: tuple[str]):
 	if 'summary' in exports:
 		create_summary(dict(sorted(registries.items())), 'summary/registries')
 		create_summary(dict(sorted(blocks.items())), 'summary/blocks')
-		# create_summary(dict(sorted(sounds.items())), 'summary/sounds')
+		create_summary(dict(sorted(sounds.items())), 'summary/sounds')
 		create_summary(commands, 'summary/commands')
 		create_summary(version_metas, 'summary/versions')
 
@@ -566,10 +551,11 @@ def process(version: str, versions: dict[str], exports: tuple[str]):
 			create_summary(entries, f'registries/{key}', bin=False)
 		create_summary(sorted(registries.keys()), 'registries', clear=False, bin=False)
 
-	click.echo('converting PNGs')
-	convert_images()
-
-	click.echo('finishing up')
+	# === export version.json to all ===
+	for export in exports:
+		with open(f'{export}/version.json', 'w') as f:
+			json.dump(version_meta, f, indent=2)
+			f.write('\n')
 
 	# === copy pack.mcmeta to json exports ===
 	for export in ['assets', 'data']:
@@ -674,48 +660,6 @@ def cache(key: str, factory):
 		with open(cache_path, 'wb') as f:
 			f.write(content)
 		return content
-
-
-def convert_images():
-	ASSETDIR = "assets"
-	converted = 0
-	milestone = 0
-	total = 0
-	last = "?"
-	click.echo("counting assets")
-	for cwd, _, files in os.walk(ASSETDIR):
-		targets = list(filter(lambda x: x.endswith(".png"), files))
-		total += len(targets)
-
-	print(f"counted {total} assets")
-	for cwd, _, files in os.walk(ASSETDIR):
-		targets = list(filter(lambda x: x.endswith(".png"), files))
-		targets = list(map(lambda x: os.path.join(cwd, x), targets))
-		for target in targets:
-			i = Image.open(target)
-			i = i.convert("RGBA")
-			content = ""
-			for y in range(i.height):
-				for x in range(i.width):
-					pix = i.getpixel((x, y))
-					content += f"{pix[0]:02x}{pix[1]:02x}{pix[2]:02x}{pix[3]:02x} "
-				content += "\n"
-			with open(target + ".raw", "w") as file:
-				file.write(content)
-			last = os.path.split(target)[1]
-			converted += 1
-
-			if converted >= milestone:
-				milestone = converted + 10
-				print(f"\r{converted}/{total} {last}".ljust(75), end='', flush=True)
-	print(f"\r{converted} converted".ljust(75))
-	print("discarding originals")
-	for cwd, _, files in os.walk(ASSETDIR):
-		targets = list(filter(lambda x: x.endswith(".png"), files))
-		targets = list(map(lambda x: os.path.join(cwd, x), targets))
-		for target in targets:
-			os.remove(target)
-	print("completed conversion")
 
 
 if __name__ == '__main__':
