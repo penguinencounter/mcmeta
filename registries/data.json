@@ -10924,7 +10924,7 @@
   "number_format_type": [
     "blank",
     "fixed",
-    "result"
+    "styled"
   ],
   "painting_variant": [
     "alban",
