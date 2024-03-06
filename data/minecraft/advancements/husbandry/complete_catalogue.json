@@ -195,7 +195,8 @@
     },
     "frame": "challenge",
     "icon": {
-      "item": "minecraft:cod"
+      "count": 1,
+      "id": "minecraft:cod"
     },
     "title": {
       "translate": "advancements.husbandry.complete_catalogue.title"
