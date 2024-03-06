@@ -12,6 +12,7 @@
     "X X"
   ],
   "result": {
-    "item": "minecraft:wolf_armor"
+    "count": 1,
+    "id": "minecraft:wolf_armor"
   }
 }
