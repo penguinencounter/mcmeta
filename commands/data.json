@@ -205,15 +205,15 @@
                                 "value": {
                                   "type": "argument",
                                   "children": {
-                                    "add": {
+                                    "add_multiplied_base": {
                                       "type": "literal",
                                       "executable": true
                                     },
-                                    "multiply": {
+                                    "add_multiplied_total": {
                                       "type": "literal",
                                       "executable": true
                                     },
-                                    "multiply_base": {
+                                    "add_value": {
                                       "type": "literal",
                                       "executable": true
                                     }
@@ -4458,6 +4458,65 @@
                 }
               }
             },
+            "items": {
+              "type": "literal",
+              "children": {
+                "block": {
+                  "type": "literal",
+                  "children": {
+                    "pos": {
+                      "type": "argument",
+                      "children": {
+                        "slots": {
+                          "type": "argument",
+                          "children": {
+                            "item_predicate": {
+                              "type": "argument",
+                              "executable": true,
+                              "parser": "minecraft:item_predicate",
+                              "redirect": [
+                                "execute"
+                              ]
+                            }
+                          },
+                          "parser": "minecraft:item_slots"
+                        }
+                      },
+                      "parser": "minecraft:block_pos"
+                    }
+                  }
+                },
+                "entity": {
+                  "type": "literal",
+                  "children": {
+                    "entities": {
+                      "type": "argument",
+                      "children": {
+                        "slots": {
+                          "type": "argument",
+                          "children": {
+                            "item_predicate": {
+                              "type": "argument",
+                              "executable": true,
+                              "parser": "minecraft:item_predicate",
+                              "redirect": [
+                                "execute"
+                              ]
+                            }
+                          },
+                          "parser": "minecraft:item_slots"
+                        }
+                      },
+                      "parser": "minecraft:entity",
+                      "properties": {
+                        "type": "entities",
+                        "amount": "multiple"
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "loaded": {
               "type": "literal",
               "children": {
@@ -5611,6 +5670,65 @@
                   "redirect": [
                     "execute"
                   ]
+                }
+              }
+            },
+            "items": {
+              "type": "literal",
+              "children": {
+                "block": {
+                  "type": "literal",
+                  "children": {
+                    "pos": {
+                      "type": "argument",
+                      "children": {
+                        "slots": {
+                          "type": "argument",
+                          "children": {
+                            "item_predicate": {
+                              "type": "argument",
+                              "executable": true,
+                              "parser": "minecraft:item_predicate",
+                              "redirect": [
+                                "execute"
+                              ]
+                            }
+                          },
+                          "parser": "minecraft:item_slots"
+                        }
+                      },
+                      "parser": "minecraft:block_pos"
+                    }
+                  }
+                },
+                "entity": {
+                  "type": "literal",
+                  "children": {
+                    "entities": {
+                      "type": "argument",
+                      "children": {
+                        "slots": {
+                          "type": "argument",
+                          "children": {
+                            "item_predicate": {
+                              "type": "argument",
+                              "executable": true,
+                              "parser": "minecraft:item_predicate",
+                              "redirect": [
+                                "execute"
+                              ]
+                            }
+                          },
+                          "parser": "minecraft:item_slots"
+                        }
+                      },
+                      "parser": "minecraft:entity",
+                      "properties": {
+                        "type": "entities",
+                        "amount": "multiple"
+                      }
+                    }
+                  }
                 }
               }
             },
@@ -8091,7 +8209,8 @@
                     "amount": "multiple"
                   }
                 }
-              }
+              },
+              "executable": true
             },
             "block": {
               "type": "literal",
@@ -8144,7 +8263,8 @@
                     "amount": "multiple"
                   }
                 }
-              }
+              },
+              "executable": true
             },
             "hostile": {
               "type": "literal",
@@ -8197,7 +8317,8 @@
                     "amount": "multiple"
                   }
                 }
-              }
+              },
+              "executable": true
             },
             "master": {
               "type": "literal",
@@ -8250,7 +8371,8 @@
                     "amount": "multiple"
                   }
                 }
-              }
+              },
+              "executable": true
             },
             "music": {
               "type": "literal",
@@ -8303,7 +8425,8 @@
                     "amount": "multiple"
                   }
                 }
-              }
+              },
+              "executable": true
             },
             "neutral": {
               "type": "literal",
@@ -8356,7 +8479,8 @@
                     "amount": "multiple"
                   }
                 }
-              }
+              },
+              "executable": true
             },
             "player": {
               "type": "literal",
@@ -8409,7 +8533,8 @@
                     "amount": "multiple"
                   }
                 }
-              }
+              },
+              "executable": true
             },
             "record": {
               "type": "literal",
@@ -8462,7 +8587,8 @@
                     "amount": "multiple"
                   }
                 }
-              }
+              },
+              "executable": true
             },
             "voice": {
               "type": "literal",
@@ -8515,7 +8641,8 @@
                     "amount": "multiple"
                   }
                 }
-              }
+              },
+              "executable": true
             },
             "weather": {
               "type": "literal",
@@ -8568,9 +8695,11 @@
                     "amount": "multiple"
                   }
                 }
-              }
+              },
+              "executable": true
             }
           },
+          "executable": true,
           "parser": "minecraft:resource_location"
         }
       }
