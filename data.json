@@ -42,6 +42,7 @@
   "loot_pool_entry_type",
   "loot_score_provider_type",
   "loot_table",
+  "map_decoration_type",
   "memory_module_type",
   "menu",
   "mob_effect",
