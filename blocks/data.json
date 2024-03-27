@@ -6136,23 +6136,13 @@
   ],
   "heavy_core": [
     {
-      "orientation": [
-        "down_east",
-        "down_north",
-        "down_south",
-        "down_west",
-        "up_east",
-        "up_north",
-        "up_south",
-        "up_west",
-        "west_up",
-        "east_up",
-        "north_up",
-        "south_up"
+      "waterlogged": [
+        "true",
+        "false"
       ]
     },
     {
-      "orientation": "north_up"
+      "waterlogged": "false"
     }
   ],
   "heavy_weighted_pressure_plate": [
@@ -12970,6 +12960,10 @@
   ],
   "trial_spawner": [
     {
+      "ominous": [
+        "true",
+        "false"
+      ],
       "trial_spawner_state": [
         "inactive",
         "waiting_for_players",
@@ -12980,6 +12974,7 @@
       ]
     },
     {
+      "ominous": "false",
       "trial_spawner_state": "inactive"
     }
   ],
@@ -13325,6 +13320,10 @@
         "west",
         "east"
       ],
+      "ominous": [
+        "true",
+        "false"
+      ],
       "vault_state": [
         "inactive",
         "active",
@@ -13334,6 +13333,7 @@
     },
     {
       "facing": "north",
+      "ominous": "false",
       "vault_state": "inactive"
     }
   ],
