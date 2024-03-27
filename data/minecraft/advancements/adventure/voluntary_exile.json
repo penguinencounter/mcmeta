@@ -49,12 +49,14 @@
                         "pattern": "minecraft:border"
                       }
                     ],
-                    "minecraft:custom_name": "{\"color\":\"gold\",\"translate\":\"block.minecraft.ominous_banner\"}",
                     "minecraft:enchantments": {
                       "levels": {}
                     },
                     "minecraft:hide_additional_tooltip": {},
+                    "minecraft:item_name": "{\"color\":\"gold\",\"translate\":\"block.minecraft.ominous_banner\"}",
                     "minecraft:lore": [],
+                    "minecraft:max_stack_size": 16,
+                    "minecraft:rarity": "common",
                     "minecraft:repair_cost": 0
                   },
                   "items": "minecraft:white_banner"
@@ -108,8 +110,8 @@
             "pattern": "minecraft:border"
           }
         ],
-        "minecraft:custom_name": "{\"color\":\"gold\",\"translate\":\"block.minecraft.ominous_banner\"}",
-        "minecraft:hide_additional_tooltip": {}
+        "minecraft:hide_additional_tooltip": {},
+        "minecraft:item_name": "{\"color\":\"gold\",\"translate\":\"block.minecraft.ominous_banner\"}"
       },
       "count": 1,
       "id": "minecraft:white_banner"
