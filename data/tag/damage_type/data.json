@@ -53,8 +53,7 @@
       "minecraft:out_of_world",
       "minecraft:generic_kill",
       "minecraft:sonic_boom",
-      "minecraft:outside_border",
-      "minecraft:potato_magic"
+      "minecraft:outside_border"
     ]
   },
   "bypasses_effects": {
@@ -159,6 +158,11 @@
       "minecraft:lightning_bolt"
     ]
   },
+  "is_player_attack": {
+    "values": [
+      "minecraft:player_attack"
+    ]
+  },
   "is_projectile": {
     "values": [
       "minecraft:arrow",
@@ -167,8 +171,7 @@
       "minecraft:unattributed_fireball",
       "minecraft:fireball",
       "minecraft:wither_skull",
-      "minecraft:thrown",
-      "minecraft:potato_magic"
+      "minecraft:thrown"
     ]
   },
   "no_anger": {

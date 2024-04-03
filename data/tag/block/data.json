@@ -37,9 +37,7 @@
   },
   "animals_spawnable_on": {
     "values": [
-      "minecraft:grass_block",
-      "minecraft:peelgrass_block",
-      "minecraft:corrupted_peelgrass_block"
+      "minecraft:grass_block"
     ]
   },
   "anvil": {
@@ -54,8 +52,7 @@
       "#minecraft:animals_spawnable_on",
       "#minecraft:badlands_terracotta",
       "minecraft:red_sand",
-      "minecraft:coarse_dirt",
-      "minecraft:gravtater"
+      "minecraft:coarse_dirt"
     ]
   },
   "axolotls_spawnable_on": {
@@ -81,7 +78,6 @@
       "minecraft:clay",
       "minecraft:gravel",
       "minecraft:sand",
-      "minecraft:gravtater",
       "minecraft:snow_block",
       "minecraft:powder_snow"
     ]
@@ -159,7 +155,6 @@
   "base_stone_overworld": {
     "values": [
       "minecraft:stone",
-      "minecraft:potone",
       "minecraft:granite",
       "minecraft:diorite",
       "minecraft:andesite",
@@ -169,7 +164,6 @@
   },
   "beacon_base_blocks": {
     "values": [
-      "minecraft:amber_block",
       "minecraft:netherite_block",
       "minecraft:emerald_block",
       "minecraft:diamond_block",
@@ -241,8 +235,7 @@
   "campfires": {
     "values": [
       "minecraft:campfire",
-      "minecraft:soul_campfire",
-      "minecraft:frying_table"
+      "minecraft:soul_campfire"
     ]
   },
   "candle_cakes": {
@@ -303,7 +296,6 @@
   },
   "ceiling_hanging_signs": {
     "values": [
-      "minecraft:potato_hanging_sign",
       "minecraft:oak_hanging_sign",
       "minecraft:spruce_hanging_sign",
       "minecraft:birch_hanging_sign",
@@ -349,7 +341,6 @@
       "#minecraft:wool_carpets",
       "minecraft:moss_carpet",
       "minecraft:snow",
-      "minecraft:poisonous_mashed_potato",
       "minecraft:nether_sprouts",
       "minecraft:warped_roots",
       "minecraft:crimson_roots"
@@ -385,7 +376,6 @@
   "convertable_to_mud": {
     "values": [
       "minecraft:dirt",
-      "minecraft:terredepomme",
       "minecraft:coarse_dirt",
       "minecraft:rooted_dirt"
     ]
@@ -393,8 +383,7 @@
   "copper_ores": {
     "values": [
       "minecraft:copper_ore",
-      "minecraft:deepslate_copper_ore",
-      "minecraft:potone_copper_ore"
+      "minecraft:deepslate_copper_ore"
     ]
   },
   "coral_blocks": {
@@ -481,17 +470,13 @@
   "diamond_ores": {
     "values": [
       "minecraft:diamond_ore",
-      "minecraft:deepslate_diamond_ore",
-      "minecraft:potone_diamond_ore"
+      "minecraft:deepslate_diamond_ore"
     ]
   },
   "dirt": {
     "values": [
       "minecraft:dirt",
-      "minecraft:terredepomme",
       "minecraft:grass_block",
-      "minecraft:peelgrass_block",
-      "minecraft:corrupted_peelgrass_block",
       "minecraft:podzol",
       "minecraft:coarse_dirt",
       "minecraft:mycelium",
@@ -565,7 +550,6 @@
       "#minecraft:small_flowers",
       "#minecraft:dirt",
       "minecraft:sand",
-      "minecraft:gravtater",
       "minecraft:red_sand",
       "minecraft:gravel",
       "minecraft:brown_mushroom",
@@ -602,7 +586,6 @@
   },
   "fence_gates": {
     "values": [
-      "minecraft:potato_fence_gate",
       "minecraft:acacia_fence_gate",
       "minecraft:birch_fence_gate",
       "minecraft:dark_oak_fence_gate",
@@ -654,7 +637,6 @@
       "minecraft:potted_cactus",
       "minecraft:potted_cornflower",
       "minecraft:potted_lily_of_the_valley",
-      "minecraft:potted_potato_flower",
       "minecraft:potted_wither_rose",
       "minecraft:potted_bamboo",
       "minecraft:potted_crimson_fungus",
@@ -684,8 +666,6 @@
   "foxes_spawnable_on": {
     "values": [
       "minecraft:grass_block",
-      "minecraft:peelgrass_block",
-      "minecraft:corrupted_peelgrass_block",
       "minecraft:snow",
       "minecraft:snow_block",
       "minecraft:podzol",
@@ -701,8 +681,6 @@
   "frogs_spawnable_on": {
     "values": [
       "minecraft:grass_block",
-      "minecraft:peelgrass_block",
-      "minecraft:corrupted_peelgrass_block",
       "minecraft:mud",
       "minecraft:mangrove_roots",
       "minecraft:muddy_mangrove_roots"
@@ -722,7 +700,6 @@
     "values": [
       "#minecraft:animals_spawnable_on",
       "minecraft:stone",
-      "minecraft:potone",
       "minecraft:snow",
       "minecraft:snow_block",
       "minecraft:packed_ice",
@@ -733,17 +710,7 @@
     "values": [
       "minecraft:gold_ore",
       "minecraft:nether_gold_ore",
-      "minecraft:deepslate_gold_ore",
-      "minecraft:potone_gold_ore"
-    ]
-  },
-  "grows_potatoes": {
-    "values": [
-      "minecraft:poison_farmland",
-      "minecraft:farmland",
-      "minecraft:corrupted_peelgrass_block",
-      "minecraft:peelgrass_block",
-      "minecraft:gravtater"
+      "minecraft:deepslate_gold_ore"
     ]
   },
   "guarded_by_piglins": {
@@ -864,8 +831,7 @@
   "iron_ores": {
     "values": [
       "minecraft:iron_ore",
-      "minecraft:deepslate_iron_ore",
-      "minecraft:potone_iron_ore"
+      "minecraft:deepslate_iron_ore"
     ]
   },
   "jungle_logs": {
@@ -879,8 +845,7 @@
   "lapis_ores": {
     "values": [
       "minecraft:lapis_ore",
-      "minecraft:deepslate_lapis_ore",
-      "minecraft:potone_lapis_ore"
+      "minecraft:deepslate_lapis_ore"
     ]
   },
   "lava_pool_stone_cannot_replace": {
@@ -892,7 +857,6 @@
   },
   "leaves": {
     "values": [
-      "minecraft:potato_leaves",
       "minecraft:jungle_leaves",
       "minecraft:oak_leaves",
       "minecraft:spruce_leaves",
@@ -909,8 +873,7 @@
     "values": [
       "#minecraft:logs_that_burn",
       "#minecraft:crimson_stems",
-      "#minecraft:warped_stems",
-      "minecraft:potato_stem"
+      "#minecraft:warped_stems"
     ]
   },
   "logs_that_burn": {
@@ -930,8 +893,7 @@
       "#minecraft:moss_replaceable",
       "minecraft:clay",
       "minecraft:gravel",
-      "minecraft:sand",
-      "minecraft:gravtater"
+      "minecraft:sand"
     ]
   },
   "maintains_farmland": {
@@ -1067,13 +1029,11 @@
       "minecraft:bamboo_mosaic_slab",
       "minecraft:bamboo_mosaic_stairs",
       "#minecraft:bamboo_blocks",
-      "minecraft:chiseled_bookshelf",
-      "minecraft:big_brain"
+      "minecraft:chiseled_bookshelf"
     ]
   },
   "mineable/hoe": {
     "values": [
-      "#minecraft:mineable/potone",
       "minecraft:nether_wart_block",
       "minecraft:warped_wart_block",
       "minecraft:hay_block",
@@ -1100,13 +1060,11 @@
       "minecraft:sculk_vein",
       "minecraft:sculk_shrieker",
       "minecraft:pink_petals",
-      "minecraft:cherry_leaves",
-      "minecraft:floatato"
+      "minecraft:cherry_leaves"
     ]
   },
   "mineable/pickaxe": {
     "values": [
-      "minecraft:amber_block",
       "minecraft:stone",
       "minecraft:granite",
       "minecraft:polished_granite",
@@ -1435,65 +1393,20 @@
       "minecraft:mud_bricks",
       "minecraft:mud_brick_stairs",
       "minecraft:mud_brick_slab",
-      "minecraft:packed_mud",
-      "minecraft:poisonous_potato_cutter",
-      "minecraft:floatater",
-      "minecraft:poisonous_potato_block",
-      "minecraft:compressed_poisonous_potato_block",
-      "minecraft:double_compressed_poisonous_potato_block",
-      "minecraft:triple_compressed_poisonous_potato_block",
-      "minecraft:quadruple_compressed_poisonous_potato_block",
-      "#minecraft:poisonous_potato_ores"
-    ]
-  },
-  "mineable/potone": {
-    "values": [
-      "minecraft:resin_ore",
-      "minecraft:potone_diamond_ore",
-      "minecraft:potone_redstone_ore",
-      "minecraft:potone_copper_ore",
-      "minecraft:potone_iron_ore",
-      "minecraft:potone_gold_ore",
-      "minecraft:potone_lapis_ore",
-      "minecraft:potone",
-      "minecraft:potone_slab",
-      "minecraft:potone_stairs",
-      "minecraft:potone_wall",
-      "minecraft:taterstone",
-      "minecraft:taterstone_slab",
-      "minecraft:taterstone_stairs",
-      "minecraft:taterstone_wall",
-      "minecraft:expired_baked_potato_bricks",
-      "minecraft:expired_baked_potato_brick_slab",
-      "minecraft:expired_baked_potato_brick_stairs",
-      "minecraft:expired_baked_potato_brick_wall",
-      "minecraft:charred_baked_potato_bricks",
-      "minecraft:charred_baked_potato_brick_slab",
-      "minecraft:charred_baked_potato_brick_stairs",
-      "minecraft:charred_baked_potato_brick_wall",
-      "minecraft:baked_potato_bricks",
-      "minecraft:baked_potato_brick_slab",
-      "minecraft:baked_potato_brick_stairs",
-      "minecraft:baked_potato_brick_wall"
+      "minecraft:packed_mud"
     ]
   },
   "mineable/shovel": {
     "values": [
       "minecraft:clay",
       "minecraft:dirt",
-      "minecraft:poison_farmland",
-      "minecraft:poison_path",
-      "minecraft:terredepomme",
       "minecraft:coarse_dirt",
       "minecraft:podzol",
       "minecraft:farmland",
       "minecraft:grass_block",
-      "minecraft:peelgrass_block",
-      "minecraft:corrupted_peelgrass_block",
       "minecraft:gravel",
       "minecraft:mycelium",
       "minecraft:sand",
-      "minecraft:gravtater",
       "minecraft:red_sand",
       "minecraft:snow_block",
       "minecraft:snow",
@@ -1505,7 +1418,6 @@
       "minecraft:mud",
       "minecraft:suspicious_sand",
       "minecraft:suspicious_gravel",
-      "minecraft:poisonous_mashed_potato",
       "#minecraft:concrete_powder"
     ]
   },
@@ -1541,10 +1453,8 @@
   "needs_iron_tool": {
     "values": [
       "minecraft:diamond_block",
-      "minecraft:amber_block",
       "minecraft:diamond_ore",
       "minecraft:deepslate_diamond_ore",
-      "minecraft:potone_diamond_ore",
       "minecraft:emerald_ore",
       "minecraft:deepslate_emerald_ore",
       "minecraft:emerald_block",
@@ -1552,10 +1462,8 @@
       "minecraft:raw_gold_block",
       "minecraft:gold_ore",
       "minecraft:deepslate_gold_ore",
-      "minecraft:potone_gold_ore",
       "minecraft:redstone_ore",
-      "minecraft:deepslate_redstone_ore",
-      "minecraft:potone_redstone_ore"
+      "minecraft:deepslate_redstone_ore"
     ]
   },
   "needs_stone_tool": {
@@ -1564,16 +1472,13 @@
       "minecraft:raw_iron_block",
       "minecraft:iron_ore",
       "minecraft:deepslate_iron_ore",
-      "minecraft:potone_iron_ore",
       "minecraft:lapis_block",
       "minecraft:lapis_ore",
-      "minecraft:potone_lapis_ore",
       "minecraft:deepslate_lapis_ore",
       "minecraft:copper_block",
       "minecraft:raw_copper_block",
       "minecraft:copper_ore",
       "minecraft:deepslate_copper_ore",
-      "minecraft:potone_copper_ore",
       "minecraft:cut_copper_slab",
       "minecraft:cut_copper_stairs",
       "minecraft:cut_copper",
@@ -1605,8 +1510,7 @@
       "minecraft:waxed_oxidized_cut_copper_slab",
       "minecraft:waxed_oxidized_cut_copper_stairs",
       "minecraft:waxed_oxidized_cut_copper",
-      "minecraft:lightning_rod",
-      "#minecraft:poisonous_potato_ores"
+      "minecraft:lightning_rod"
     ]
   },
   "nether_carver_replaceables": {
@@ -1623,8 +1527,7 @@
   "nylium": {
     "values": [
       "minecraft:crimson_nylium",
-      "minecraft:warped_nylium",
-      "minecraft:corrupted_peelgrass_block"
+      "minecraft:warped_nylium"
     ]
   },
   "oak_logs": {
@@ -1657,8 +1560,7 @@
       "minecraft:snow",
       "minecraft:packed_ice",
       "minecraft:raw_iron_block",
-      "minecraft:raw_copper_block",
-      "#minecraft:poisonous_potato_ores"
+      "minecraft:raw_copper_block"
     ]
   },
   "overworld_natural_logs": {
@@ -1676,8 +1578,6 @@
   "parrots_spawnable_on": {
     "values": [
       "minecraft:grass_block",
-      "minecraft:peelgrass_block",
-      "minecraft:corrupted_peelgrass_block",
       "minecraft:air",
       "#minecraft:leaves",
       "#minecraft:logs"
@@ -1694,7 +1594,6 @@
   },
   "planks": {
     "values": [
-      "minecraft:potato_planks",
       "minecraft:oak_planks",
       "minecraft:spruce_planks",
       "minecraft:birch_planks",
@@ -1708,12 +1607,6 @@
       "minecraft:cherry_planks"
     ]
   },
-  "poisonous_potato_ores": {
-    "values": [
-      "minecraft:poisonous_potato_ore",
-      "minecraft:deepslate_poisonous_potato_ore"
-    ]
-  },
   "polar_bears_spawnable_on_alternate": {
     "values": [
       "minecraft:ice"
@@ -1722,33 +1615,8 @@
   "portals": {
     "values": [
       "minecraft:nether_portal",
-      "minecraft:potato_portal",
       "minecraft:end_portal",
       "minecraft:end_gateway"
-    ]
-  },
-  "potatostone_base": {
-    "values": [
-      "minecraft:peelgrass_block",
-      "minecraft:corrupted_peelgrass_block",
-      "minecraft:gravtater",
-      "minecraft:terredepomme",
-      "minecraft:potato_peels_block",
-      "minecraft:orange_potato_peels_block",
-      "minecraft:magenta_potato_peels_block",
-      "minecraft:light_blue_potato_peels_block",
-      "minecraft:yellow_potato_peels_block",
-      "minecraft:lime_potato_peels_block",
-      "minecraft:pink_potato_peels_block",
-      "minecraft:gray_potato_peels_block",
-      "minecraft:light_gray_potato_peels_block",
-      "minecraft:cyan_potato_peels_block",
-      "minecraft:purple_potato_peels_block",
-      "minecraft:blue_potato_peels_block",
-      "minecraft:brown_potato_peels_block",
-      "minecraft:green_potato_peels_block",
-      "minecraft:red_potato_peels_block",
-      "minecraft:black_potato_peels_block"
     ]
   },
   "pressure_plates": {
@@ -1767,12 +1635,9 @@
   "rabbits_spawnable_on": {
     "values": [
       "minecraft:grass_block",
-      "minecraft:peelgrass_block",
-      "minecraft:corrupted_peelgrass_block",
       "minecraft:snow",
       "minecraft:snow_block",
-      "minecraft:sand",
-      "minecraft:gravtater"
+      "minecraft:sand"
     ]
   },
   "rails": {
@@ -1786,14 +1651,12 @@
   "redstone_ores": {
     "values": [
       "minecraft:redstone_ore",
-      "minecraft:deepslate_redstone_ore",
-      "minecraft:potone_redstone_ore"
+      "minecraft:deepslate_redstone_ore"
     ]
   },
   "replaceable": {
     "values": [
       "minecraft:air",
-      "minecraft:poisonous_mashed_potato",
       "minecraft:water",
       "minecraft:lava",
       "minecraft:short_grass",
@@ -1848,7 +1711,6 @@
       "minecraft:sand",
       "minecraft:red_sand",
       "minecraft:suspicious_sand",
-      "minecraft:gravtater",
       "minecraft:suspicious_sand"
     ]
   },
@@ -1874,7 +1736,6 @@
       "#minecraft:nylium",
       "#minecraft:base_stone_nether",
       "minecraft:sand",
-      "minecraft:gravtater",
       "minecraft:red_sand",
       "minecraft:gravel",
       "minecraft:soul_sand",
@@ -1930,11 +1791,6 @@
     "values": [
       "#minecraft:wooden_slabs",
       "minecraft:bamboo_mosaic_slab",
-      "minecraft:potone_slab",
-      "minecraft:baked_potato_brick_slab",
-      "minecraft:charred_baked_potato_brick_slab",
-      "minecraft:taterstone_slab",
-      "minecraft:expired_baked_potato_brick_slab",
       "minecraft:stone_slab",
       "minecraft:smooth_stone_slab",
       "minecraft:stone_brick_slab",
@@ -2002,7 +1858,6 @@
       "minecraft:oxeye_daisy",
       "minecraft:cornflower",
       "minecraft:lily_of_the_valley",
-      "minecraft:potato_flower",
       "minecraft:wither_rose",
       "minecraft:torchflower"
     ]
@@ -2010,7 +1865,6 @@
   "smelts_to_glass": {
     "values": [
       "minecraft:sand",
-      "minecraft:gravtater",
       "minecraft:red_sand"
     ]
   },
@@ -2018,22 +1872,17 @@
     "values": [
       "#minecraft:overworld_natural_logs",
       "minecraft:stone",
-      "minecraft:potone",
       "minecraft:packed_ice",
       "minecraft:iron_ore",
       "minecraft:coal_ore",
       "minecraft:copper_ore",
-      "minecraft:emerald_ore",
-      "minecraft:poisonous_potato_ore"
+      "minecraft:emerald_ore"
     ]
   },
   "sniffer_diggable_block": {
     "values": [
       "minecraft:dirt",
-      "minecraft:terredepomme",
       "minecraft:grass_block",
-      "minecraft:peelgrass_block",
-      "minecraft:corrupted_peelgrass_block",
       "minecraft:podzol",
       "minecraft:coarse_dirt",
       "minecraft:rooted_dirt",
@@ -2092,11 +1941,6 @@
     "values": [
       "#minecraft:wooden_stairs",
       "minecraft:bamboo_mosaic_stairs",
-      "minecraft:potone_stairs",
-      "minecraft:taterstone_stairs",
-      "minecraft:expired_baked_potato_brick_stairs",
-      "minecraft:charred_baked_potato_brick_stairs",
-      "minecraft:baked_potato_brick_stairs",
       "minecraft:cobblestone_stairs",
       "minecraft:sandstone_stairs",
       "minecraft:nether_brick_stairs",
@@ -2142,7 +1986,6 @@
   },
   "standing_signs": {
     "values": [
-      "minecraft:potato_sign",
       "minecraft:oak_sign",
       "minecraft:spruce_sign",
       "minecraft:birch_sign",
@@ -2195,11 +2038,6 @@
       "#minecraft:saplings",
       "#minecraft:small_flowers",
       "#minecraft:crops",
-      "minecraft:potato_bud",
-      "minecraft:potato_stem",
-      "minecraft:potato_leaves",
-      "minecraft:potato_fruit",
-      "minecraft:potato_sprouts",
       "minecraft:short_grass",
       "minecraft:fern",
       "minecraft:dead_bush",
@@ -2304,8 +2142,6 @@
   "valid_spawn": {
     "values": [
       "minecraft:grass_block",
-      "minecraft:peelgrass_block",
-      "minecraft:corrupted_peelgrass_block",
       "minecraft:podzol"
     ]
   },
@@ -2325,7 +2161,6 @@
   },
   "wall_hanging_signs": {
     "values": [
-      "minecraft:potato_wall_hanging_sign",
       "minecraft:oak_wall_hanging_sign",
       "minecraft:spruce_wall_hanging_sign",
       "minecraft:birch_wall_hanging_sign",
@@ -2352,7 +2187,6 @@
   },
   "wall_signs": {
     "values": [
-      "minecraft:potato_wall_sign",
       "minecraft:oak_wall_sign",
       "minecraft:spruce_wall_sign",
       "minecraft:birch_wall_sign",
@@ -2368,11 +2202,6 @@
   },
   "walls": {
     "values": [
-      "minecraft:potone_wall",
-      "minecraft:taterstone_wall",
-      "minecraft:baked_potato_brick_wall",
-      "minecraft:charred_baked_potato_brick_wall",
-      "minecraft:expired_baked_potato_brick_wall",
       "minecraft:cobblestone_wall",
       "minecraft:mossy_cobblestone_wall",
       "minecraft:brick_wall",
@@ -2437,8 +2266,6 @@
   "wolves_spawnable_on": {
     "values": [
       "minecraft:grass_block",
-      "minecraft:peelgrass_block",
-      "minecraft:corrupted_peelgrass_block",
       "minecraft:snow",
       "minecraft:snow_block",
       "minecraft:coarse_dirt",
@@ -2447,7 +2274,6 @@
   },
   "wooden_buttons": {
     "values": [
-      "minecraft:potato_button",
       "minecraft:oak_button",
       "minecraft:spruce_button",
       "minecraft:birch_button",
@@ -2463,7 +2289,6 @@
   },
   "wooden_doors": {
     "values": [
-      "minecraft:potato_door",
       "minecraft:oak_door",
       "minecraft:spruce_door",
       "minecraft:birch_door",
@@ -2486,7 +2311,6 @@
       "minecraft:birch_fence",
       "minecraft:jungle_fence",
       "minecraft:crimson_fence",
-      "minecraft:potato_fence",
       "minecraft:warped_fence",
       "minecraft:mangrove_fence",
       "minecraft:bamboo_fence",
@@ -2503,7 +2327,6 @@
       "minecraft:dark_oak_pressure_plate",
       "minecraft:crimson_pressure_plate",
       "minecraft:warped_pressure_plate",
-      "minecraft:potato_pressure_plate",
       "minecraft:mangrove_pressure_plate",
       "minecraft:bamboo_pressure_plate",
       "minecraft:cherry_pressure_plate"
@@ -2518,7 +2341,6 @@
       "minecraft:acacia_slab",
       "minecraft:dark_oak_slab",
       "minecraft:crimson_slab",
-      "minecraft:potato_slab",
       "minecraft:warped_slab",
       "minecraft:mangrove_slab",
       "minecraft:bamboo_slab",
@@ -2527,7 +2349,6 @@
   },
   "wooden_stairs": {
     "values": [
-      "minecraft:potato_stairs",
       "minecraft:oak_stairs",
       "minecraft:spruce_stairs",
       "minecraft:birch_stairs",
@@ -2543,7 +2364,6 @@
   },
   "wooden_trapdoors": {
     "values": [
-      "minecraft:potato_trapdoor",
       "minecraft:acacia_trapdoor",
       "minecraft:birch_trapdoor",
       "minecraft:dark_oak_trapdoor",

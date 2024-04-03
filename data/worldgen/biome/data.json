@@ -1,226 +1,4 @@
 {
-  "arboretum": {
-    "carvers": {
-      "air": [
-        "minecraft:cave",
-        "minecraft:cave_extra_underground",
-        "minecraft:canyon"
-      ]
-    },
-    "downfall": 0.5,
-    "effects": {
-      "ambient_sound": "nothingtoseeheremovealong:ambient.arboretum.loop",
-      "fog_color": 9821879,
-      "grass_color": 6017107,
-      "music": {
-        "max_delay": 24000,
-        "min_delay": 12000,
-        "replace_current_music": false,
-        "sound": "minecraft:music.overworld.flower_forest"
-      },
-      "sky_color": 4652998,
-      "water_color": 4187298,
-      "water_fog_color": 740644
-    },
-    "features": [
-      [],
-      [
-        "minecraft:lake_lava_underground",
-        "minecraft:lake_lava_surface"
-      ],
-      [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
-      ],
-      [
-        "minecraft:monster_room",
-        "minecraft:monster_room_deep"
-      ],
-      [],
-      [
-        "minecraft:park_lane_surface",
-        "minecraft:park_lane"
-      ],
-      [
-        "minecraft:ore_tatterstone",
-        "minecraft:ore_amber",
-        "minecraft:ore_gravtater",
-        "minecraft:ore_coal_upper",
-        "minecraft:ore_coal_lower",
-        "minecraft:ore_iron_upper",
-        "minecraft:ore_iron_middle",
-        "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
-        "minecraft:ore_gold_above_zero",
-        "minecraft:ore_redstone",
-        "minecraft:ore_redstone_lower",
-        "minecraft:ore_diamond",
-        "minecraft:ore_diamond_medium",
-        "minecraft:ore_diamond_large",
-        "minecraft:ore_diamond_buried",
-        "minecraft:ore_lapis",
-        "minecraft:ore_lapis_buried",
-        "minecraft:ore_copper_small",
-        "minecraft:underwater_magma"
-      ],
-      [],
-      [
-        "minecraft:spring_water",
-        "minecraft:spring_lava"
-      ],
-      [
-        "minecraft:patch_potato",
-        "minecraft:flower_forest_flowers",
-        "minecraft:arboretum_trees",
-        "minecraft:flower_default",
-        "minecraft:patch_grass_forest",
-        "minecraft:brown_mushroom_normal",
-        "minecraft:red_mushroom_normal",
-        "minecraft:patch_sugar_cane",
-        "minecraft:patch_pumpkin"
-      ],
-      [
-        "minecraft:potato_cloud"
-      ]
-    ],
-    "has_precipitation": true,
-    "spawn_costs": {},
-    "spawners": {
-      "ambient": [
-        {
-          "type": "minecraft:bat",
-          "maxCount": 8,
-          "minCount": 8,
-          "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
-        }
-      ],
-      "axolotls": [],
-      "creature": [
-        {
-          "type": "minecraft:sheep",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 12
-        },
-        {
-          "type": "minecraft:pig",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 10
-        },
-        {
-          "type": "minecraft:chicken",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 10
-        },
-        {
-          "type": "minecraft:cow",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 8
-        },
-        {
-          "type": "minecraft:horse",
-          "maxCount": 6,
-          "minCount": 2,
-          "weight": 5
-        },
-        {
-          "type": "minecraft:donkey",
-          "maxCount": 3,
-          "minCount": 1,
-          "weight": 1
-        },
-        {
-          "type": "minecraft:rabbit",
-          "maxCount": 3,
-          "minCount": 2,
-          "weight": 4
-        },
-        {
-          "type": "minecraft:wolf",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 2
-        }
-      ],
-      "misc": [],
-      "monster": [
-        {
-          "type": "minecraft:spider",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 100
-        },
-        {
-          "type": "minecraft:zombie",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 50
-        },
-        {
-          "type": "minecraft:zombie_villager",
-          "maxCount": 1,
-          "minCount": 1,
-          "weight": 5
-        },
-        {
-          "type": "minecraft:skeleton",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 100
-        },
-        {
-          "type": "minecraft:creeper",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 100
-        },
-        {
-          "type": "minecraft:slime",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 10
-        },
-        {
-          "type": "minecraft:enderman",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 10
-        },
-        {
-          "type": "minecraft:witch",
-          "maxCount": 1,
-          "minCount": 1,
-          "weight": 5
-        }
-      ],
-      "underground_water_creature": [
-        {
-          "type": "minecraft:glow_squid",
-          "maxCount": 6,
-          "minCount": 4,
-          "weight": 10
-        }
-      ],
-      "water_ambient": [],
-      "water_creature": []
-    },
-    "temperature": 0.9
-  },
   "badlands": {
     "carvers": {
       "air": [
@@ -258,8 +36,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -282,7 +59,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -328,12 +104,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -358,12 +128,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -449,8 +213,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -473,7 +236,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -521,12 +283,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -587,12 +343,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -776,8 +526,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -800,7 +549,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -844,12 +592,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -874,12 +616,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -965,8 +701,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -989,7 +724,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -1035,12 +769,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -1083,12 +811,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -1176,8 +898,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -1200,7 +921,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -1245,12 +965,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -1287,12 +1001,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -1372,8 +1080,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -1396,7 +1103,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -1444,12 +1150,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -1467,12 +1167,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -1549,228 +1243,6 @@
       ]
     },
     "temperature": 0.5
-  },
-  "corruption": {
-    "carvers": {
-      "air": [
-        "minecraft:cave",
-        "minecraft:cave_extra_underground",
-        "minecraft:canyon"
-      ]
-    },
-    "downfall": 1.0,
-    "effects": {
-      "ambient_sound": "nothingtoseeheremovealong:ambient.corruption.loop",
-      "fog_color": 1356889,
-      "foliage_color": 1153876,
-      "grass_color": 1466676,
-      "music": {
-        "max_delay": 24000,
-        "min_delay": 12000,
-        "replace_current_music": false,
-        "sound": "minecraft:music.nether.warped_forest"
-      },
-      "particle": {
-        "options": {
-          "type": "minecraft:warped_spore"
-        },
-        "probability": 0.01428
-      },
-      "sky_color": 5046241,
-      "water_color": 1356889,
-      "water_fog_color": 1153876
-    },
-    "features": [
-      [],
-      [
-        "minecraft:lake_lava_underground",
-        "minecraft:lake_lava_surface"
-      ],
-      [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
-      ],
-      [
-        "minecraft:monster_room",
-        "minecraft:monster_room_deep"
-      ],
-      [],
-      [],
-      [
-        "minecraft:ore_tatterstone",
-        "minecraft:ore_amber",
-        "minecraft:ore_gravtater",
-        "minecraft:ore_coal_upper",
-        "minecraft:ore_coal_lower",
-        "minecraft:ore_iron_upper",
-        "minecraft:ore_iron_middle",
-        "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
-        "minecraft:ore_gold_above_zero",
-        "minecraft:ore_redstone",
-        "minecraft:ore_redstone_lower",
-        "minecraft:ore_diamond",
-        "minecraft:ore_diamond_medium",
-        "minecraft:ore_diamond_large",
-        "minecraft:ore_diamond_buried",
-        "minecraft:ore_lapis",
-        "minecraft:ore_lapis_buried",
-        "minecraft:ore_copper_small",
-        "minecraft:underwater_magma"
-      ],
-      [
-        "minecraft:brown_mushroom_nether",
-        "minecraft:red_mushroom_nether"
-      ],
-      [
-        "minecraft:spring_water",
-        "minecraft:spring_lava"
-      ],
-      [
-        "minecraft:patch_potato_sparse",
-        "minecraft:brown_mushroom_normal",
-        "minecraft:red_mushroom_normal",
-        "minecraft:corrupted_buds",
-        "minecraft:potato_sprouts",
-        "minecraft:mother_potato_tree",
-        "minecraft:potato_tree_tall",
-        "minecraft:potato_tree"
-      ],
-      [
-        "minecraft:potato_cloud"
-      ]
-    ],
-    "has_precipitation": true,
-    "spawn_costs": {},
-    "spawners": {
-      "ambient": [
-        {
-          "type": "minecraft:bat",
-          "maxCount": 8,
-          "minCount": 8,
-          "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
-        }
-      ],
-      "axolotls": [],
-      "creature": [
-        {
-          "type": "minecraft:sheep",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 12
-        },
-        {
-          "type": "minecraft:pig",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 10
-        },
-        {
-          "type": "minecraft:chicken",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 10
-        },
-        {
-          "type": "minecraft:cow",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 8
-        },
-        {
-          "type": "minecraft:cat",
-          "maxCount": 1,
-          "minCount": 1,
-          "weight": 40
-        }
-      ],
-      "misc": [],
-      "monster": [
-        {
-          "type": "minecraft:spider",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 100
-        },
-        {
-          "type": "minecraft:zombie",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 50
-        },
-        {
-          "type": "minecraft:zombie_villager",
-          "maxCount": 1,
-          "minCount": 1,
-          "weight": 5
-        },
-        {
-          "type": "minecraft:skeleton",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 100
-        },
-        {
-          "type": "minecraft:creeper",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 100
-        },
-        {
-          "type": "minecraft:slime",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 10
-        },
-        {
-          "type": "minecraft:enderman",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 10
-        },
-        {
-          "type": "minecraft:witch",
-          "maxCount": 1,
-          "minCount": 1,
-          "weight": 5
-        },
-        {
-          "type": "minecraft:witch",
-          "maxCount": 1,
-          "minCount": 1,
-          "weight": 100
-        },
-        {
-          "type": "minecraft:phantom",
-          "maxCount": 1,
-          "minCount": 1,
-          "weight": 100
-        }
-      ],
-      "underground_water_creature": [
-        {
-          "type": "minecraft:glow_squid",
-          "maxCount": 6,
-          "minCount": 4,
-          "weight": 10
-        }
-      ],
-      "water_ambient": [],
-      "water_creature": []
-    },
-    "temperature": 2.0
   },
   "crimson_forest": {
     "carvers": {
@@ -1913,8 +1385,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -1937,7 +1408,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -1983,12 +1453,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -2031,12 +1495,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -2116,8 +1574,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -2140,7 +1597,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -2188,12 +1644,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -2211,12 +1661,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -2325,8 +1769,7 @@
       [],
       [],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -2349,7 +1792,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -2430,8 +1872,7 @@
       [
         "minecraft:iceberg_packed",
         "minecraft:iceberg_blue",
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -2456,7 +1897,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -2501,12 +1941,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -2531,12 +1965,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -2637,8 +2065,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -2661,7 +2088,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -2709,12 +2135,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -2732,12 +2152,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -2855,8 +2269,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -2879,7 +2292,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -2927,12 +2339,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -2950,12 +2356,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -3067,8 +2467,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:fossil_upper",
@@ -3095,7 +2494,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -3141,12 +2539,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -3171,12 +2563,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 19
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -3269,7 +2655,6 @@
       ],
       [
         "minecraft:amethyst_geode",
-        "minecraft:potato_geode",
         "minecraft:large_dripstone"
       ],
       [
@@ -3293,7 +2678,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -3342,12 +2726,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -3365,12 +2743,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -3591,8 +2963,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -3615,7 +2986,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -3661,12 +3031,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -3691,12 +3055,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -3748,198 +3106,6 @@
     },
     "temperature": 2.0
   },
-  "fields": {
-    "carvers": {
-      "air": [
-        "minecraft:cave",
-        "minecraft:cave_extra_underground",
-        "minecraft:canyon"
-      ]
-    },
-    "downfall": 0.4,
-    "effects": {
-      "ambient_sound": "nothingtoseeheremovealong:ambient.fields.loop",
-      "fog_color": 9821879,
-      "foliage_color": 2199366,
-      "grass_color": 6017107,
-      "sky_color": 4587458,
-      "water_color": 4187298,
-      "water_fog_color": 740644
-    },
-    "features": [
-      [],
-      [
-        "minecraft:lake_lava_underground",
-        "minecraft:lake_lava_surface"
-      ],
-      [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
-      ],
-      [
-        "minecraft:monster_room",
-        "minecraft:monster_room_deep"
-      ],
-      [],
-      [
-        "minecraft:potato_field"
-      ],
-      [
-        "minecraft:ore_tatterstone",
-        "minecraft:ore_amber",
-        "minecraft:ore_gravtater",
-        "minecraft:ore_coal_upper",
-        "minecraft:ore_coal_lower",
-        "minecraft:ore_iron_upper",
-        "minecraft:ore_iron_middle",
-        "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
-        "minecraft:ore_gold_above_zero",
-        "minecraft:ore_redstone",
-        "minecraft:ore_redstone_lower",
-        "minecraft:ore_diamond",
-        "minecraft:ore_diamond_medium",
-        "minecraft:ore_diamond_large",
-        "minecraft:ore_diamond_buried",
-        "minecraft:ore_lapis",
-        "minecraft:ore_lapis_buried",
-        "minecraft:ore_copper_small",
-        "minecraft:underwater_magma"
-      ],
-      [],
-      [
-        "minecraft:spring_water",
-        "minecraft:spring_lava"
-      ],
-      [
-        "minecraft:patch_potato",
-        "minecraft:patch_tall_grass_2",
-        "minecraft:trees_plains",
-        "minecraft:flower_plains",
-        "minecraft:patch_grass_plain",
-        "minecraft:brown_mushroom_normal",
-        "minecraft:red_mushroom_normal",
-        "minecraft:patch_sugar_cane",
-        "minecraft:patch_pumpkin"
-      ],
-      [
-        "minecraft:potato_cloud"
-      ]
-    ],
-    "has_precipitation": true,
-    "spawn_costs": {},
-    "spawners": {
-      "ambient": [
-        {
-          "type": "minecraft:bat",
-          "maxCount": 8,
-          "minCount": 8,
-          "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
-        }
-      ],
-      "axolotls": [],
-      "creature": [
-        {
-          "type": "minecraft:sheep",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 12
-        },
-        {
-          "type": "minecraft:pig",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 10
-        },
-        {
-          "type": "minecraft:chicken",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 10
-        },
-        {
-          "type": "minecraft:cow",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 8
-        }
-      ],
-      "misc": [],
-      "monster": [
-        {
-          "type": "minecraft:spider",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 100
-        },
-        {
-          "type": "minecraft:zombie",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 50
-        },
-        {
-          "type": "minecraft:zombie_villager",
-          "maxCount": 1,
-          "minCount": 1,
-          "weight": 5
-        },
-        {
-          "type": "minecraft:skeleton",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 100
-        },
-        {
-          "type": "minecraft:creeper",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 100
-        },
-        {
-          "type": "minecraft:slime",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 10
-        },
-        {
-          "type": "minecraft:enderman",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 10
-        },
-        {
-          "type": "minecraft:witch",
-          "maxCount": 1,
-          "minCount": 1,
-          "weight": 5
-        }
-      ],
-      "underground_water_creature": [
-        {
-          "type": "minecraft:glow_squid",
-          "maxCount": 6,
-          "minCount": 4,
-          "weight": 10
-        }
-      ],
-      "water_ambient": [],
-      "water_creature": []
-    },
-    "temperature": 0.8
-  },
   "flower_forest": {
     "carvers": {
       "air": [
@@ -3974,8 +3140,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -3998,7 +3163,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -4044,12 +3208,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -4098,12 +3256,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -4189,8 +3341,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -4213,7 +3364,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -4259,12 +3409,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -4313,12 +3457,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -4400,8 +3538,7 @@
       [
         "minecraft:iceberg_packed",
         "minecraft:iceberg_blue",
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -4426,7 +3563,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -4471,12 +3607,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -4501,12 +3631,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -4613,8 +3737,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -4637,7 +3760,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -4679,12 +3801,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -4709,12 +3825,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -4794,8 +3904,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -4818,7 +3927,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -4863,12 +3971,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -4886,12 +3988,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -4997,8 +4093,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -5021,7 +4116,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -5066,12 +4160,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -5108,12 +4196,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -5165,194 +4247,6 @@
     },
     "temperature": -0.2
   },
-  "hash": {
-    "carvers": {
-      "air": [
-        "minecraft:cave",
-        "minecraft:cave_extra_underground",
-        "minecraft:canyon"
-      ]
-    },
-    "creature_spawn_probability": 0.01,
-    "downfall": 0.0,
-    "effects": {
-      "ambient_sound": "nothingtoseeheremovealong:ambient.hash.loop",
-      "fog_color": 9821879,
-      "foliage_color": 2199366,
-      "grass_color": 6017107,
-      "music": {
-        "max_delay": 24000,
-        "min_delay": 12000,
-        "replace_current_music": false,
-        "sound": "minecraft:music.overworld.desert"
-      },
-      "sky_color": 3932048,
-      "water_color": 4187298,
-      "water_fog_color": 740644
-    },
-    "features": [
-      [],
-      [
-        "minecraft:lake_lava_underground",
-        "minecraft:lake_lava_surface"
-      ],
-      [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
-      ],
-      [
-        "minecraft:fossil_upper",
-        "minecraft:fossil_lower",
-        "minecraft:monster_room",
-        "minecraft:monster_room_deep"
-      ],
-      [
-        "minecraft:hash_well"
-      ],
-      [],
-      [
-        "minecraft:ore_tatterstone",
-        "minecraft:ore_amber",
-        "minecraft:ore_gravtater",
-        "minecraft:ore_coal_upper",
-        "minecraft:ore_coal_lower",
-        "minecraft:ore_iron_upper",
-        "minecraft:ore_iron_middle",
-        "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
-        "minecraft:ore_gold_above_zero",
-        "minecraft:ore_redstone",
-        "minecraft:ore_redstone_lower",
-        "minecraft:ore_diamond",
-        "minecraft:ore_diamond_medium",
-        "minecraft:ore_diamond_large",
-        "minecraft:ore_diamond_buried",
-        "minecraft:ore_lapis",
-        "minecraft:ore_lapis_buried",
-        "minecraft:ore_copper_small",
-        "minecraft:underwater_magma"
-      ],
-      [],
-      [
-        "minecraft:spring_water",
-        "minecraft:spring_lava"
-      ],
-      [
-        "minecraft:patch_potato_sparse",
-        "minecraft:flower_default",
-        "minecraft:patch_grass_badlands",
-        "minecraft:patch_dead_bush_2_all_levels",
-        "minecraft:brown_mushroom_normal",
-        "minecraft:red_mushroom_normal",
-        "minecraft:leaf_pile_hash",
-        "minecraft:venomous_column_hash"
-      ],
-      [
-        "minecraft:potato_cloud"
-      ]
-    ],
-    "has_precipitation": false,
-    "spawn_costs": {},
-    "spawners": {
-      "ambient": [
-        {
-          "type": "minecraft:bat",
-          "maxCount": 8,
-          "minCount": 8,
-          "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
-        }
-      ],
-      "axolotls": [],
-      "creature": [
-        {
-          "type": "minecraft:armadillo",
-          "maxCount": 2,
-          "minCount": 1,
-          "weight": 4
-        }
-      ],
-      "misc": [],
-      "monster": [
-        {
-          "type": "minecraft:spider",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 100
-        },
-        {
-          "type": "minecraft:zombie",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 19
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 50
-        },
-        {
-          "type": "minecraft:zombie_villager",
-          "maxCount": 1,
-          "minCount": 1,
-          "weight": 1
-        },
-        {
-          "type": "minecraft:skeleton",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 100
-        },
-        {
-          "type": "minecraft:creeper",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 100
-        },
-        {
-          "type": "minecraft:slime",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 10
-        },
-        {
-          "type": "minecraft:enderman",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 10
-        },
-        {
-          "type": "minecraft:witch",
-          "maxCount": 1,
-          "minCount": 1,
-          "weight": 5
-        },
-        {
-          "type": "minecraft:husk",
-          "maxCount": 4,
-          "minCount": 4,
-          "weight": 80
-        }
-      ],
-      "underground_water_creature": [
-        {
-          "type": "minecraft:glow_squid",
-          "maxCount": 6,
-          "minCount": 4,
-          "weight": 10
-        }
-      ],
-      "water_ambient": [],
-      "water_creature": []
-    },
-    "temperature": 2.0
-  },
   "ice_spikes": {
     "carvers": {
       "air": [
@@ -5382,8 +4276,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -5409,7 +4302,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -5454,12 +4346,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -5490,12 +4376,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -5587,8 +4467,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -5611,7 +4490,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -5653,12 +4531,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -5683,12 +4555,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -5774,8 +4640,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -5798,7 +4663,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -5846,12 +4710,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -5912,12 +4770,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -6003,8 +4855,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -6027,7 +4878,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -6074,12 +4924,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -6097,12 +4941,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -6226,8 +5064,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -6250,7 +5087,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -6297,12 +5133,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [
@@ -6327,12 +5157,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -6427,8 +5251,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:fossil_upper",
@@ -6453,7 +5276,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -6495,12 +5317,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -6525,12 +5341,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -6635,8 +5445,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -6659,7 +5468,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -6704,12 +5512,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -6746,12 +5548,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -6831,8 +5627,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -6855,7 +5650,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -6898,12 +5692,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -7070,8 +5858,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -7094,7 +5881,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -7142,12 +5928,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -7165,12 +5945,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -7282,8 +6056,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -7306,7 +6079,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -7352,12 +6124,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -7400,12 +6166,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -7492,7 +6252,6 @@
       ],
       [
         "minecraft:amethyst_geode",
-        "minecraft:potato_geode",
         "minecraft:forest_rock"
       ],
       [
@@ -7516,7 +6275,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -7566,12 +6324,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -7632,12 +6384,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 100
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -7724,7 +6470,6 @@
       ],
       [
         "minecraft:amethyst_geode",
-        "minecraft:potato_geode",
         "minecraft:forest_rock"
       ],
       [
@@ -7748,7 +6493,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -7798,12 +6542,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -7864,12 +6602,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -7949,8 +6681,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -7973,7 +6704,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -8019,12 +6749,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -8079,12 +6803,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -8164,8 +6882,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -8188,7 +6905,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -8234,12 +6950,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -8257,12 +6967,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -8362,8 +7066,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -8386,7 +7089,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -8432,12 +7134,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -8498,12 +7194,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -8583,8 +7273,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -8607,7 +7296,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -8653,12 +7341,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -8731,12 +7413,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -8857,8 +7533,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -8881,7 +7556,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -8925,12 +7599,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -8948,12 +7616,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -9034,8 +7696,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -9058,7 +7719,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -9103,12 +7763,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -9139,12 +7793,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -9236,8 +7884,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -9260,7 +7907,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -9304,12 +7950,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -9340,12 +7980,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -9425,8 +8059,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -9449,7 +8082,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -9496,12 +8128,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -9562,12 +8188,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -9776,8 +8396,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -9800,7 +8419,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -9847,12 +8465,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -9907,12 +8519,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -9998,8 +8604,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -10022,7 +8627,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -10063,12 +8667,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -10086,12 +8684,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -10171,8 +8763,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -10195,7 +8786,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -10239,12 +8829,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -10262,12 +8846,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -10347,8 +8925,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -10371,7 +8948,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -10418,12 +8994,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -10478,12 +9048,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -10571,8 +9135,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:fossil_upper",
@@ -10597,7 +9160,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -10645,12 +9207,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -10699,12 +9255,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -10796,8 +9346,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -10820,7 +9369,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -10867,12 +9415,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -10933,12 +9475,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -11107,8 +9643,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -11131,7 +9666,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -11179,12 +9713,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -11208,12 +9736,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -11392,129 +9914,6 @@
     },
     "temperature": 2.0
   },
-  "wasteland": {
-    "carvers": {
-      "air": [
-        "minecraft:cave",
-        "minecraft:cave_extra_underground",
-        "minecraft:canyon"
-      ]
-    },
-    "downfall": 0.5,
-    "effects": {
-      "ambient_sound": "nothingtoseeheremovealong:ambient.wasteland.loop",
-      "fog_color": 8157780,
-      "foliage_color": 4056583,
-      "grass_color": 5105159,
-      "particle": {
-        "options": {
-          "type": "minecraft:dripping_honey"
-        },
-        "probability": 0.001
-      },
-      "sky_color": 4456378,
-      "water_color": 5105159,
-      "water_fog_color": 4056583
-    },
-    "features": [
-      [],
-      [
-        "minecraft:lake_lava_underground",
-        "minecraft:lake_lava_surface"
-      ],
-      [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
-      ],
-      [
-        "minecraft:monster_room",
-        "minecraft:monster_room_deep"
-      ],
-      [
-        "minecraft:small_debris_columns"
-      ],
-      [],
-      [
-        "minecraft:ore_tatterstone",
-        "minecraft:ore_amber",
-        "minecraft:ore_gravtater",
-        "minecraft:ore_coal_upper",
-        "minecraft:ore_coal_lower",
-        "minecraft:ore_iron_upper",
-        "minecraft:ore_iron_middle",
-        "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
-        "minecraft:ore_gold_above_zero",
-        "minecraft:ore_redstone",
-        "minecraft:ore_redstone_lower",
-        "minecraft:ore_diamond",
-        "minecraft:ore_diamond_medium",
-        "minecraft:ore_diamond_large",
-        "minecraft:ore_diamond_buried",
-        "minecraft:ore_lapis",
-        "minecraft:ore_lapis_buried",
-        "minecraft:ore_copper_small",
-        "minecraft:underwater_magma"
-      ],
-      [
-        "minecraft:brown_mushroom_nether",
-        "minecraft:red_mushroom_nether",
-        "minecraft:large_potatostone",
-        "minecraft:large_potato_columns"
-      ],
-      [
-        "minecraft:spring_water",
-        "minecraft:spring_lava",
-        "minecraft:poison_pool"
-      ],
-      [
-        "minecraft:patch_potato_sparse",
-        "minecraft:potato_leaf",
-        "minecraft:twisted_potato"
-      ],
-      [
-        "minecraft:potato_cloud"
-      ]
-    ],
-    "has_precipitation": true,
-    "spawn_costs": {},
-    "spawners": {
-      "ambient": [],
-      "axolotls": [],
-      "creature": [],
-      "misc": [],
-      "monster": [
-        {
-          "type": "minecraft:slime",
-          "maxCount": 2,
-          "minCount": 1,
-          "weight": 5
-        },
-        {
-          "type": "minecraft:giant",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 10
-        },
-        {
-          "type": "minecraft:wither_skeleton",
-          "maxCount": 1,
-          "minCount": 1,
-          "weight": 5
-        },
-        {
-          "type": "minecraft:toxifin",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
-        }
-      ],
-      "underground_water_creature": [],
-      "water_ambient": [],
-      "water_creature": []
-    },
-    "temperature": 2.0
-  },
   "windswept_forest": {
     "carvers": {
       "air": [
@@ -11543,8 +9942,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -11567,7 +9965,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -11615,12 +10012,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -11669,12 +10060,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -11754,8 +10139,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -11778,7 +10162,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -11826,12 +10209,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -11880,12 +10257,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -11965,8 +10336,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -11989,7 +10359,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -12037,12 +10406,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -12091,12 +10454,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -12176,8 +10533,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -12200,7 +10556,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -12245,12 +10600,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -12311,12 +10660,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",
@@ -12405,8 +10748,7 @@
         "minecraft:lake_lava_surface"
       ],
       [
-        "minecraft:amethyst_geode",
-        "minecraft:potato_geode"
+        "minecraft:amethyst_geode"
       ],
       [
         "minecraft:monster_room",
@@ -12429,7 +10771,6 @@
         "minecraft:ore_iron_upper",
         "minecraft:ore_iron_middle",
         "minecraft:ore_iron_small",
-        "minecraft:ore_poisonous_potato",
         "minecraft:ore_gold",
         "minecraft:ore_gold_lower",
         "minecraft:ore_redstone",
@@ -12476,12 +10817,6 @@
           "maxCount": 8,
           "minCount": 8,
           "weight": 10
-        },
-        {
-          "type": "minecraft:batato",
-          "maxCount": 16,
-          "minCount": 8,
-          "weight": 13
         }
       ],
       "axolotls": [],
@@ -12512,12 +10847,6 @@
           "maxCount": 4,
           "minCount": 4,
           "weight": 95
-        },
-        {
-          "type": "minecraft:poisonous_potato_zombie",
-          "maxCount": 4,
-          "minCount": 1,
-          "weight": 25
         },
         {
           "type": "minecraft:zombie_villager",

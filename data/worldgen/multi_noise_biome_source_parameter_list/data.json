@@ -4,8 +4,5 @@
   },
   "overworld": {
     "preset": "minecraft:overworld"
-  },
-  "potato": {
-    "preset": "minecraft:potato"
   }
 }

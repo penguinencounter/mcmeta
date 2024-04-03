@@ -5,8 +5,6 @@
       "minecraft:axolotl",
       "minecraft:guardian",
       "minecraft:elder_guardian",
-      "minecraft:toxifin",
-      "minecraft:plaguewhale",
       "minecraft:cod",
       "minecraft:pufferfish",
       "minecraft:salmon",
@@ -36,9 +34,7 @@
     "values": [
       "minecraft:drowned",
       "minecraft:guardian",
-      "minecraft:elder_guardian",
-      "minecraft:toxifin",
-      "minecraft:plaguewhale"
+      "minecraft:elder_guardian"
     ]
   },
   "axolotl_hunt_targets": {
@@ -60,8 +56,6 @@
   "can_breathe_under_water": {
     "values": [
       "#minecraft:undead",
-      "minecraft:plaguewhale",
-      "minecraft:toxifin",
       "minecraft:axolotl",
       "minecraft:frog",
       "minecraft:guardian",
@@ -100,7 +94,6 @@
       "minecraft:shulker",
       "minecraft:allay",
       "minecraft:bat",
-      "minecraft:batato",
       "minecraft:bee",
       "minecraft:blaze",
       "minecraft:cat",
@@ -181,8 +174,6 @@
       "minecraft:turtle",
       "minecraft:guardian",
       "minecraft:elder_guardian",
-      "minecraft:toxifin",
-      "minecraft:plaguewhale",
       "minecraft:cod",
       "minecraft:pufferfish",
       "minecraft:salmon",
@@ -255,8 +246,7 @@
       "minecraft:zombified_piglin",
       "minecraft:zoglin",
       "minecraft:drowned",
-      "minecraft:husk",
-      "minecraft:poisonous_potato_zombie"
+      "minecraft:husk"
     ]
   }
 }

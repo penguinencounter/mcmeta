@@ -60,23 +60,6 @@
       }
     ]
   },
-  "arboretum_trees": {
-    "feature": "minecraft:arboretum_trees",
-    "placement": [
-      {
-        "type": "minecraft:count_on_every_layer",
-        "count": 12,
-        "start_offset": 2
-      },
-      {
-        "type": "minecraft:surface_water_depth_filter",
-        "max_water_depth": 0
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
   "bamboo": {
     "feature": "minecraft:bamboo_some_podzol",
     "placement": [
@@ -326,10 +309,8 @@
         "type": "minecraft:count",
         "count": {
           "type": "minecraft:uniform",
-          "value": {
-            "max_inclusive": 19,
-            "min_inclusive": 0
-          }
+          "max_inclusive": 19,
+          "min_inclusive": 0
         }
       },
       {
@@ -545,10 +526,8 @@
         "type": "minecraft:count",
         "count": {
           "type": "minecraft:uniform",
-          "value": {
-            "max_inclusive": 4,
-            "min_inclusive": 0
-          }
+          "max_inclusive": 4,
+          "min_inclusive": 0
         }
       },
       {
@@ -590,40 +569,12 @@
       }
     ]
   },
-  "corrupted_buds": {
-    "feature": "minecraft:corrputed_buds",
-    "placement": [
-      {
-        "type": "minecraft:count",
-        "count": 10
-      },
-      {
-        "type": "minecraft:in_square"
-      },
-      {
-        "type": "minecraft:height_range",
-        "height": {
-          "type": "minecraft:uniform",
-          "max_inclusive": {
-            "below_top": 0
-          },
-          "min_inclusive": {
-            "above_bottom": 0
-          }
-        }
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
   "crimson_forest_vegetation": {
     "feature": "minecraft:crimson_forest_vegetation",
     "placement": [
       {
         "type": "minecraft:count_on_every_layer",
-        "count": 6,
-        "start_offset": 0
+        "count": 6
       },
       {
         "type": "minecraft:biome"
@@ -635,8 +586,7 @@
     "placement": [
       {
         "type": "minecraft:count_on_every_layer",
-        "count": 8,
-        "start_offset": 0
+        "count": 8
       },
       {
         "type": "minecraft:biome"
@@ -688,8 +638,7 @@
     "placement": [
       {
         "type": "minecraft:count_on_every_layer",
-        "count": 40,
-        "start_offset": 0
+        "count": 40
       },
       {
         "type": "minecraft:biome"
@@ -823,10 +772,8 @@
         "type": "minecraft:count",
         "count": {
           "type": "minecraft:uniform",
-          "value": {
-            "max_inclusive": 96,
-            "min_inclusive": 48
-          }
+          "max_inclusive": 96,
+          "min_inclusive": 48
         }
       },
       {
@@ -868,10 +815,8 @@
         "xz_spread": 0,
         "y_spread": {
           "type": "minecraft:uniform",
-          "value": {
-            "max_inclusive": 9,
-            "min_inclusive": 3
-          }
+          "max_inclusive": 9,
+          "min_inclusive": 3
         }
       },
       {
@@ -1079,16 +1024,12 @@
         "type": "minecraft:count",
         "count": {
           "type": "minecraft:clamped",
-          "value": {
+          "max_inclusive": 3,
+          "min_inclusive": 0,
+          "source": {
+            "type": "minecraft:uniform",
             "max_inclusive": 3,
-            "min_inclusive": 0,
-            "source": {
-              "type": "minecraft:uniform",
-              "value": {
-                "max_inclusive": 3,
-                "min_inclusive": -1
-              }
-            }
+            "min_inclusive": -1
           }
         }
       },
@@ -1197,16 +1138,12 @@
         "type": "minecraft:count",
         "count": {
           "type": "minecraft:clamped",
-          "value": {
+          "max_inclusive": 1,
+          "min_inclusive": 0,
+          "source": {
+            "type": "minecraft:uniform",
             "max_inclusive": 1,
-            "min_inclusive": 0,
-            "source": {
-              "type": "minecraft:uniform",
-              "value": {
-                "max_inclusive": 1,
-                "min_inclusive": -3
-              }
-            }
+            "min_inclusive": -3
           }
         }
       },
@@ -1303,10 +1240,8 @@
         "type": "minecraft:count",
         "count": {
           "type": "minecraft:uniform",
-          "value": {
-            "max_inclusive": 157,
-            "min_inclusive": 104
-          }
+          "max_inclusive": 157,
+          "min_inclusive": 104
         }
       },
       {
@@ -1368,10 +1303,8 @@
         "type": "minecraft:count",
         "count": {
           "type": "minecraft:biased_to_bottom",
-          "value": {
-            "max_inclusive": 9,
-            "min_inclusive": 0
-          }
+          "max_inclusive": 9,
+          "min_inclusive": 0
         }
       },
       {
@@ -1403,23 +1336,6 @@
           "type": "minecraft:matching_blocks",
           "blocks": "minecraft:air"
         }
-      }
-    ]
-  },
-  "hash_well": {
-    "feature": "minecraft:hash_well",
-    "placement": [
-      {
-        "type": "minecraft:count_on_every_layer",
-        "count": 1,
-        "start_offset": 2
-      },
-      {
-        "type": "minecraft:rarity_filter",
-        "chance": 100
-      },
-      {
-        "type": "minecraft:biome"
       }
     ]
   },
@@ -1660,8 +1576,7 @@
     "placement": [
       {
         "type": "minecraft:count_on_every_layer",
-        "count": 2,
-        "start_offset": 0
+        "count": 2
       },
       {
         "type": "minecraft:biome"
@@ -1675,10 +1590,8 @@
         "type": "minecraft:count",
         "count": {
           "type": "minecraft:uniform",
-          "value": {
-            "max_inclusive": 48,
-            "min_inclusive": 10
-          }
+          "max_inclusive": 48,
+          "min_inclusive": 10
         }
       },
       {
@@ -1695,73 +1608,6 @@
             "above_bottom": 0
           }
         }
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
-  "large_potato_columns": {
-    "feature": "minecraft:large_potato_columns",
-    "placement": [
-      {
-        "type": "minecraft:count_on_every_layer",
-        "count": 1,
-        "start_offset": 0
-      },
-      {
-        "type": "minecraft:rarity_filter",
-        "chance": 3
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
-  "large_potatostone": {
-    "feature": "minecraft:large_potatostone",
-    "placement": [
-      {
-        "type": "minecraft:count",
-        "count": {
-          "type": "minecraft:uniform",
-          "value": {
-            "max_inclusive": 10,
-            "min_inclusive": 5
-          }
-        }
-      },
-      {
-        "type": "minecraft:in_square"
-      },
-      {
-        "type": "minecraft:height_range",
-        "height": {
-          "type": "minecraft:uniform",
-          "max_inclusive": {
-            "absolute": 256
-          },
-          "min_inclusive": {
-            "above_bottom": 0
-          }
-        }
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
-  "leaf_pile_hash": {
-    "feature": "minecraft:leaf_pile",
-    "placement": [
-      {
-        "type": "minecraft:count_on_every_layer",
-        "count": 1,
-        "start_offset": 2
-      },
-      {
-        "type": "minecraft:rarity_filter",
-        "chance": 4
       },
       {
         "type": "minecraft:biome"
@@ -2025,46 +1871,6 @@
       }
     ]
   },
-  "mother_potato_checked": {
-    "feature": "minecraft:mother_potato_tree",
-    "placement": [
-      {
-        "type": "minecraft:block_predicate_filter",
-        "predicate": {
-          "type": "minecraft:would_survive",
-          "state": {
-            "Name": "minecraft:potato_sprouts"
-          }
-        }
-      }
-    ]
-  },
-  "mother_potato_tree": {
-    "feature": "minecraft:mother_potato_tree",
-    "placement": [
-      {
-        "type": "minecraft:rarity_filter",
-        "chance": 48
-      },
-      {
-        "type": "minecraft:count_on_every_layer",
-        "count": 1,
-        "start_offset": 0
-      },
-      {
-        "type": "minecraft:biome"
-      },
-      {
-        "type": "minecraft:block_predicate_filter",
-        "predicate": {
-          "type": "minecraft:would_survive",
-          "state": {
-            "Name": "minecraft:potato_sprouts"
-          }
-        }
-      }
-    ]
-  },
   "mushroom_island_vegetation": {
     "feature": "minecraft:mushroom_island_vegetation",
     "placement": [
@@ -2085,8 +1891,7 @@
     "placement": [
       {
         "type": "minecraft:count_on_every_layer",
-        "count": 4,
-        "start_offset": 0
+        "count": 4
       },
       {
         "type": "minecraft:biome"
@@ -2158,33 +1963,6 @@
             }
           }
         }
-      }
-    ]
-  },
-  "ore_amber": {
-    "feature": "minecraft:ore_amber",
-    "placement": [
-      {
-        "type": "minecraft:count",
-        "count": 20
-      },
-      {
-        "type": "minecraft:in_square"
-      },
-      {
-        "type": "minecraft:height_range",
-        "height": {
-          "type": "minecraft:trapezoid",
-          "max_inclusive": {
-            "absolute": 80
-          },
-          "min_inclusive": {
-            "absolute": -60
-          }
-        }
-      },
-      {
-        "type": "minecraft:biome"
       }
     ]
   },
@@ -2406,33 +2184,6 @@
       {
         "type": "minecraft:count",
         "count": 16
-      },
-      {
-        "type": "minecraft:in_square"
-      },
-      {
-        "type": "minecraft:height_range",
-        "height": {
-          "type": "minecraft:trapezoid",
-          "max_inclusive": {
-            "absolute": 112
-          },
-          "min_inclusive": {
-            "absolute": -16
-          }
-        }
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
-  "ore_copper_small": {
-    "feature": "minecraft:ore_copper_small",
-    "placement": [
-      {
-        "type": "minecraft:count",
-        "count": 4
       },
       {
         "type": "minecraft:in_square"
@@ -2720,33 +2471,6 @@
       }
     ]
   },
-  "ore_gold_above_zero": {
-    "feature": "minecraft:ore_gold_buried",
-    "placement": [
-      {
-        "type": "minecraft:count",
-        "count": 4
-      },
-      {
-        "type": "minecraft:in_square"
-      },
-      {
-        "type": "minecraft:height_range",
-        "height": {
-          "type": "minecraft:trapezoid",
-          "max_inclusive": {
-            "absolute": 32
-          },
-          "min_inclusive": {
-            "absolute": 0
-          }
-        }
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
   "ore_gold_deltas": {
     "feature": "minecraft:ore_nether_gold",
     "placement": [
@@ -2808,10 +2532,8 @@
         "type": "minecraft:count",
         "count": {
           "type": "minecraft:uniform",
-          "value": {
-            "max_inclusive": 1,
-            "min_inclusive": 0
-          }
+          "max_inclusive": 1,
+          "min_inclusive": 0
         }
       },
       {
@@ -2961,33 +2683,6 @@
           },
           "min_inclusive": {
             "absolute": 5
-          }
-        }
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
-  "ore_gravtater": {
-    "feature": "minecraft:ore_gravtater",
-    "placement": [
-      {
-        "type": "minecraft:count",
-        "count": 14
-      },
-      {
-        "type": "minecraft:in_square"
-      },
-      {
-        "type": "minecraft:height_range",
-        "height": {
-          "type": "minecraft:uniform",
-          "max_inclusive": {
-            "below_top": 0
-          },
-          "min_inclusive": {
-            "above_bottom": 0
           }
         }
       },
@@ -3185,33 +2880,6 @@
       }
     ]
   },
-  "ore_poisonous_potato": {
-    "feature": "minecraft:ore_poisonous_potato",
-    "placement": [
-      {
-        "type": "minecraft:count",
-        "count": 10
-      },
-      {
-        "type": "minecraft:in_square"
-      },
-      {
-        "type": "minecraft:height_range",
-        "height": {
-          "type": "minecraft:trapezoid",
-          "max_inclusive": {
-            "absolute": 56
-          },
-          "min_inclusive": {
-            "absolute": -24
-          }
-        }
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
   "ore_quartz_deltas": {
     "feature": "minecraft:ore_quartz",
     "placement": [
@@ -3347,33 +3015,6 @@
       }
     ]
   },
-  "ore_tatterstone": {
-    "feature": "minecraft:ore_taterstone",
-    "placement": [
-      {
-        "type": "minecraft:count",
-        "count": 14
-      },
-      {
-        "type": "minecraft:in_square"
-      },
-      {
-        "type": "minecraft:height_range",
-        "height": {
-          "type": "minecraft:uniform",
-          "max_inclusive": {
-            "absolute": 81
-          },
-          "min_inclusive": {
-            "absolute": 5
-          }
-        }
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
   "ore_tuff": {
     "feature": "minecraft:ore_tuff",
     "placement": [
@@ -3396,27 +3037,6 @@
           }
         }
       },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
-  "park_lane": {
-    "feature": "minecraft:park_lane",
-    "placement": [
-      {
-        "type": "minecraft:count_on_every_layer",
-        "count": 2,
-        "start_offset": 2
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
-  "park_lane_surface": {
-    "feature": "minecraft:park_lane_surface",
-    "placement": [
       {
         "type": "minecraft:biome"
       }
@@ -3560,19 +3180,6 @@
       }
     ]
   },
-  "patch_dead_bush_2_all_levels": {
-    "feature": "minecraft:patch_dead_bush",
-    "placement": [
-      {
-        "type": "minecraft:count_on_every_layer",
-        "count": 2,
-        "start_offset": 2
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
   "patch_dead_bush_badlands": {
     "feature": "minecraft:patch_dead_bush",
     "placement": [
@@ -3599,10 +3206,8 @@
         "type": "minecraft:count",
         "count": {
           "type": "minecraft:uniform",
-          "value": {
-            "max_inclusive": 5,
-            "min_inclusive": 0
-          }
+          "max_inclusive": 5,
+          "min_inclusive": 0
         }
       },
       {
@@ -3828,36 +3433,6 @@
       }
     ]
   },
-  "patch_potato": {
-    "feature": "minecraft:patch_potato",
-    "placement": [
-      {
-        "type": "minecraft:count_on_every_layer",
-        "count": 1,
-        "start_offset": 2
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
-  "patch_potato_sparse": {
-    "feature": "minecraft:patch_potato",
-    "placement": [
-      {
-        "type": "minecraft:rarity_filter",
-        "chance": 4
-      },
-      {
-        "type": "minecraft:count_on_every_layer",
-        "count": 1,
-        "start_offset": 2
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
   "patch_pumpkin": {
     "feature": "minecraft:patch_pumpkin",
     "placement": [
@@ -3884,10 +3459,8 @@
         "type": "minecraft:count",
         "count": {
           "type": "minecraft:uniform",
-          "value": {
-            "max_inclusive": 5,
-            "min_inclusive": 0
-          }
+          "max_inclusive": 5,
+          "min_inclusive": 0
         }
       },
       {
@@ -4080,10 +3653,6 @@
     "feature": "minecraft:pile_melon",
     "placement": []
   },
-  "pile_potato_fruit": {
-    "feature": "minecraft:pile_potato_fruit",
-    "placement": []
-  },
   "pile_pumpkin": {
     "feature": "minecraft:pile_pumpkin",
     "placement": []
@@ -4165,10 +3734,8 @@
         "type": "minecraft:count",
         "count": {
           "type": "minecraft:uniform",
-          "value": {
-            "max_inclusive": 256,
-            "min_inclusive": 192
-          }
+          "max_inclusive": 256,
+          "min_inclusive": 192
         }
       },
       {
@@ -4190,212 +3757,29 @@
         "type": "minecraft:count",
         "count": {
           "type": "minecraft:uniform",
-          "value": {
-            "max_inclusive": 5,
-            "min_inclusive": 1
-          }
+          "max_inclusive": 5,
+          "min_inclusive": 1
         }
       },
       {
         "type": "minecraft:random_offset",
         "xz_spread": {
           "type": "minecraft:clamped_normal",
-          "value": {
-            "deviation": 3.0,
-            "max_inclusive": 10,
-            "mean": 0.0,
-            "min_inclusive": -10
-          }
+          "deviation": 3.0,
+          "max_inclusive": 10,
+          "mean": 0.0,
+          "min_inclusive": -10
         },
         "y_spread": {
           "type": "minecraft:clamped_normal",
-          "value": {
-            "deviation": 0.6,
-            "max_inclusive": 2,
-            "mean": 0.0,
-            "min_inclusive": -2
-          }
+          "deviation": 0.6,
+          "max_inclusive": 2,
+          "mean": 0.0,
+          "min_inclusive": -2
         }
       },
       {
         "type": "minecraft:biome"
-      }
-    ]
-  },
-  "poison_pool": {
-    "feature": "minecraft:poison",
-    "placement": [
-      {
-        "type": "minecraft:count_on_every_layer",
-        "count": 40,
-        "start_offset": 0
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
-  "potato": {
-    "feature": "minecraft:potato_tree",
-    "placement": [
-      {
-        "type": "minecraft:block_predicate_filter",
-        "predicate": {
-          "type": "minecraft:would_survive",
-          "state": {
-            "Name": "minecraft:potato_sprouts"
-          }
-        }
-      }
-    ]
-  },
-  "potato_checked": {
-    "feature": "minecraft:potato_tree",
-    "placement": [
-      {
-        "type": "minecraft:block_predicate_filter",
-        "predicate": {
-          "type": "minecraft:would_survive",
-          "state": {
-            "Name": "minecraft:potato_sprouts"
-          }
-        }
-      }
-    ]
-  },
-  "potato_cloud": {
-    "feature": "minecraft:potato_cloud",
-    "placement": [
-      {
-        "type": "minecraft:rarity_filter",
-        "chance": 10
-      },
-      {
-        "type": "minecraft:in_square"
-      },
-      {
-        "type": "minecraft:cloud"
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
-  "potato_field": {
-    "feature": "minecraft:potato_field",
-    "placement": [
-      {
-        "type": "minecraft:count_on_every_layer",
-        "count": 8,
-        "start_offset": 2
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
-  "potato_geode": {
-    "feature": "minecraft:potato_geode",
-    "placement": [
-      {
-        "type": "minecraft:rarity_filter",
-        "chance": 18
-      },
-      {
-        "type": "minecraft:in_square"
-      },
-      {
-        "type": "minecraft:height_range",
-        "height": {
-          "type": "minecraft:uniform",
-          "max_inclusive": {
-            "absolute": 30
-          },
-          "min_inclusive": {
-            "above_bottom": 6
-          }
-        }
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
-  "potato_leaf": {
-    "feature": "minecraft:potato_leaf",
-    "placement": [
-      {
-        "type": "minecraft:count_on_every_layer",
-        "count": 1,
-        "start_offset": 0
-      },
-      {
-        "type": "minecraft:rarity_filter",
-        "chance": 5
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
-  "potato_sprouts": {
-    "feature": "minecraft:potato_sprouts",
-    "placement": [
-      {
-        "type": "minecraft:count_on_every_layer",
-        "count": 8,
-        "start_offset": 0
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
-  "potato_tree": {
-    "feature": "minecraft:potato_tree",
-    "placement": [
-      {
-        "type": "minecraft:count_on_every_layer",
-        "count": 6,
-        "start_offset": 0
-      },
-      {
-        "type": "minecraft:biome"
-      },
-      {
-        "type": "minecraft:block_predicate_filter",
-        "predicate": {
-          "type": "minecraft:would_survive",
-          "state": {
-            "Name": "minecraft:potato_sprouts"
-          }
-        }
-      }
-    ]
-  },
-  "potato_tree_tall": {
-    "feature": "minecraft:potato_tree_tall",
-    "placement": [
-      {
-        "type": "minecraft:rarity_filter",
-        "chance": 6
-      },
-      {
-        "type": "minecraft:count_on_every_layer",
-        "count": 1,
-        "start_offset": 0
-      },
-      {
-        "type": "minecraft:biome"
-      },
-      {
-        "type": "minecraft:block_predicate_filter",
-        "predicate": {
-          "type": "minecraft:would_survive",
-          "state": {
-            "Name": "minecraft:potato_sprouts"
-          }
-        }
       }
     ]
   },
@@ -4509,10 +3893,8 @@
         "type": "minecraft:count",
         "count": {
           "type": "minecraft:uniform",
-          "value": {
-            "max_inclusive": 2,
-            "min_inclusive": 1
-          }
+          "max_inclusive": 2,
+          "min_inclusive": 1
         }
       },
       {
@@ -4590,10 +3972,8 @@
         "type": "minecraft:count",
         "count": {
           "type": "minecraft:uniform",
-          "value": {
-            "max_inclusive": 250,
-            "min_inclusive": 204
-          }
+          "max_inclusive": 250,
+          "min_inclusive": 204
         }
       },
       {
@@ -4838,25 +4218,7 @@
     "placement": [
       {
         "type": "minecraft:count_on_every_layer",
-        "count": 4,
-        "start_offset": 0
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
-  "small_debris_columns": {
-    "feature": "minecraft:small_debris_columns",
-    "placement": [
-      {
-        "type": "minecraft:count_on_every_layer",
-        "count": 1,
-        "start_offset": 0
-      },
-      {
-        "type": "minecraft:rarity_filter",
-        "chance": 3
+        "count": 4
       },
       {
         "type": "minecraft:biome"
@@ -6016,23 +5378,6 @@
       }
     ]
   },
-  "twisted_potato": {
-    "feature": "minecraft:twisted_potato",
-    "placement": [
-      {
-        "type": "minecraft:count_on_every_layer",
-        "count": 1,
-        "start_offset": 0
-      },
-      {
-        "type": "minecraft:rarity_filter",
-        "chance": 13
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
   "twisting_vines": {
     "feature": "minecraft:twisting_vines",
     "placement": [
@@ -6067,10 +5412,8 @@
         "type": "minecraft:count",
         "count": {
           "type": "minecraft:uniform",
-          "value": {
-            "max_inclusive": 52,
-            "min_inclusive": 44
-          }
+          "max_inclusive": 52,
+          "min_inclusive": 44
         }
       },
       {
@@ -6092,23 +5435,6 @@
         "type": "minecraft:surface_relative_threshold_filter",
         "heightmap": "OCEAN_FLOOR_WG",
         "max_inclusive": -2
-      },
-      {
-        "type": "minecraft:biome"
-      }
-    ]
-  },
-  "venomous_column_hash": {
-    "feature": "minecraft:venomous_column",
-    "placement": [
-      {
-        "type": "minecraft:count_on_every_layer",
-        "count": 1,
-        "start_offset": 2
-      },
-      {
-        "type": "minecraft:rarity_filter",
-        "chance": 16
       },
       {
         "type": "minecraft:biome"
@@ -6176,8 +5502,7 @@
     "placement": [
       {
         "type": "minecraft:count_on_every_layer",
-        "count": 5,
-        "start_offset": 0
+        "count": 5
       },
       {
         "type": "minecraft:biome"
@@ -6189,8 +5514,7 @@
     "placement": [
       {
         "type": "minecraft:count_on_every_layer",
-        "count": 8,
-        "start_offset": 0
+        "count": 8
       },
       {
         "type": "minecraft:biome"
