@@ -17,6 +17,7 @@
   "tag/block",
   "tag/cat_variant",
   "tag/damage_type",
+  "tag/enchantment",
   "tag/entity_type",
   "tag/fluid",
   "tag/game_event",
