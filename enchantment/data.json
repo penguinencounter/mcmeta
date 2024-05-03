@@ -3,7 +3,9 @@
   "bane_of_arthropods",
   "binding_curse",
   "blast_protection",
+  "breach",
   "channeling",
+  "density",
   "depth_strider",
   "efficiency",
   "feather_falling",
@@ -22,7 +24,6 @@
   "mending",
   "multishot",
   "piercing",
-  "potatofication",
   "power",
   "projectile_protection",
   "protection",
@@ -38,5 +39,6 @@
   "swift_sneak",
   "thorns",
   "unbreaking",
-  "vanishing_curse"
+  "vanishing_curse",
+  "wind_burst"
 ]
