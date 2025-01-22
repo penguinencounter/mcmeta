@@ -2648,6 +2648,19 @@
     "zombie_head",
     "zombie_wall_head"
   ],
+  "cat_variant": [
+    "all_black",
+    "black",
+    "british_shorthair",
+    "calico",
+    "jellie",
+    "persian",
+    "ragdoll",
+    "red",
+    "siamese",
+    "tabby",
+    "white"
+  ],
   "chat_type": [
     "chat",
     "emote_command",
@@ -2785,6 +2798,11 @@
     "include/space",
     "include/unifont",
     "uniform"
+  ],
+  "frog_variant": [
+    "cold",
+    "temperate",
+    "warm"
   ],
   "instrument": [
     "admire_goat_horn",
@@ -9005,10 +9023,6 @@
     "wool",
     "wool_carpets"
   ],
-  "tag/cat_variant": [
-    "default_spawns",
-    "full_moon_spawns"
-  ],
   "tag/damage_type": [
     "always_hurts_ender_dragons",
     "always_kills_armor_stands",
@@ -9018,11 +9032,11 @@
     "burn_from_stepping",
     "burns_armor_stands",
     "bypasses_armor",
+    "bypasses_blocking",
     "bypasses_effects",
     "bypasses_enchantments",
     "bypasses_invulnerability",
     "bypasses_resistance",
-    "bypasses_shield",
     "bypasses_wolf_armor",
     "can_break_armor_stand",
     "damages_helmet",
@@ -9079,6 +9093,7 @@
     "can_breathe_under_water",
     "can_equip_saddle",
     "can_turn_in_boats",
+    "can_wear_horse_armor",
     "deflects_projectiles",
     "dismounts_underwater",
     "fall_damage_immune",
